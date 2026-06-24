@@ -12,6 +12,7 @@
 * [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
 * [Setting up DAQ PC](readout-setup/setting-up-daq-pc.md)
 * [Getting Started HGCROC & Calibrations KCU](readout-setup/getting-started-hgcroc-and-calibrations-kcu.md)
+* [Calibration comparisons](readout-setup/calibration-comparisons.md)
 
 ## Trigger Setup
 
