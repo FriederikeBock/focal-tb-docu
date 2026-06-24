@@ -10,3 +10,7 @@
 
 <figure><img src="../.gitbook/assets/KCUwithMezzanines_2.jpg" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/DAQBoardWithMezzanines_1.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/RaspPi_ReconfigurationDAQBoard.jpg" alt=""><figcaption></figcaption></figure>
+
