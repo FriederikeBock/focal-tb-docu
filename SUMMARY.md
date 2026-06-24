@@ -2,6 +2,11 @@
 
 * [Welcome to the FoCal TB tutorial](README.md)
 
+## Hardware Components
+
+* [Electronics](hardware-components/electronics.md)
+* [Mechanical setup](hardware-components/mechanical-setup.md)
+
 ## Readout-Setup
 
 * [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
