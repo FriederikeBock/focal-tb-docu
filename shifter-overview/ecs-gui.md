@@ -32,7 +32,7 @@ You can then continue to monitor the run through the Infologger and QC (see dedi
 
 ### Root file output
 
-The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/home/flp/reco_output/`. 
+The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/home/flp/reco_output/`. The naming convention currently is currently `focalevents_{environment_id}.root`.
 
 ## IMPORTANT NOTES
 
@@ -40,3 +40,4 @@ The ECS is currently set up to reconstruct events live as the run is happening. 
 - Please do not **KILL** the environment! Always wait for **SHUTDOWN**.
 - Previously, there has been an issue where environments that have been shutdown do not disappear from the Control GUI. If this starts up again, don't worry about it - let us know and we will clear them, but it is low priority, just be careful to keep track of which environment you are using.
 - It is expected that once the run has started, the EPN will show **No Data**, as we do not have an EPN. 
+- DO NOT TOUCH ANYTHING UNDER THE HEADING **HARDWARE**
