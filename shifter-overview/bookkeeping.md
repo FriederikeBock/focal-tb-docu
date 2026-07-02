@@ -3,7 +3,7 @@
 
 To keep track of each run that we perform during the testbeam, it is important to be consistent about recording problems and solutions as they come up. To this end, you should will need to keep track of things using two separate bookkeeping entries: 
 - The ALICE bookkeeping system that can be accessed [here](http://alio2-flp-focal.cern.ch:4000/)
-- The Google sheet that can be accessed [here]
+- The Google sheet that can be accessed [here](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing)
 
 ## ALICE Bookkeeping System
 
@@ -37,6 +37,7 @@ It is important to make a log of any issues that are solved during a run unless 
 
 ## Bookkeeping Sheet
 
+We also have a google sheet for more manual tracking of information about each run's configuration settings. This will be more easily accesible outside of the CERN network (though the other system can still be viewed using [EduVPN](https://eduvpn.docs.cern.ch/)). 
 
 ## Logbook Template
 
@@ -75,3 +76,7 @@ It is important to make a log of any issues that are solved during a run unless 
 ### Other comments
 xx
 
+
+## IMPORTANT NOTES
+- Don't forget to log in both locations!
+- For maximum ease of information accessibility, please don't forget to attach detailed run information to the main ALICE system (don't just log it in the sheet!) - use the template above and post it as a run log
