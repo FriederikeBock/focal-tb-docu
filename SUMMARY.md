@@ -7,8 +7,8 @@
 * [Introduction](shifter-overview/intro.md)
 * [ECS](shifter-overview/ecs-gui.md)
 * [QC](shifter-overview/qc-gui.md)
+* [Error Tracking](shifter-overview/infologger.md)
 * [Bookkeeping](shifter-overview/bookkeeping.md)
-* [Error Log](shifter-overview/infologger.md)
 * [Useful Information](shifter-overview/links.md)
 
 ## Hardware Components
