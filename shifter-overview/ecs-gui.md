@@ -6,7 +6,7 @@ Data taking for the test beam is now controlled through the central Control syst
 
 Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. To create the environment, click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
 
-<img src="../.gitbook/assets/new_environment_1.png" width="200">
+<img src="../.gitbook/assets/new_environment_1.png" alt="new environment" width="300" >
 
 Under "General Configuration", load the configuration **PHYSICS_FOCAL** and make sure the run type is set to **PHYSICS**.
 
