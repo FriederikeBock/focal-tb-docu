@@ -9,7 +9,7 @@
 * [QC](shifter-overview/qc-gui.md)
 * [Infologger](shifter-overview/infologger.md)
 * [Bookkeeping](shifter-overview/bookkeeping.md)
-* [FAQ](shifter-overview/faq.md)
+* [Useful Information](shifter-overview/links.md)
 
 ## Hardware Components
 
