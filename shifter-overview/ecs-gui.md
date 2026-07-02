@@ -10,7 +10,7 @@ Before beginning a data taking run, you must first create an environment, a self
 
 Under "General Configuration", load the configuration **PHYSICS_FOCAL** and make sure the run type is set to **PHYSICS**.
 
-<img src="../.gitbook/assets/new_environment_2.png" width="500">
+<img src="../.gitbook/assets/new_environment_2.png" width="400">
 
 Finally, at the bottom of the page, create the environment using the button labelled **Deploy**. The environment will then appear under **Active Environments** and begin configuration. It will receive its own unique ID that can be used to search for issues coming from the environment in the Infologger if needed.
 
