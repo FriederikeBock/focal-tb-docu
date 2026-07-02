@@ -13,7 +13,7 @@ When you first enter the infologger, its message display setting will automatica
 ### Filters
 There are a variety of options for what messages the infologger can be configured to display. 
 - This is mostly useful if you would like to perform a query, and look for errors that came up during a specific run or time period 
-- The filters are displayed as headers (see Hostname, Rolename, PID, etc in the image above) and can be controlled by typing in the two rows of text field below each header
+- The filters are displayed as headers (see Hostname, Rolename, PID, etc in the image below) and can be controlled by typing in the two rows of text field below each header
 
 <img src="../.gitbook/assets/infologger.png">
 
