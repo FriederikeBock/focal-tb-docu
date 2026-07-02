@@ -259,7 +259,7 @@ The output files will be saved in the `./dump/fpgaX_406_InjectionDAC_YYYYMMDD_HH
 
 <figure><img src="../.gitbook/assets/image (36)" alt=""><figcaption></figcaption></figure>
 
-### Multi File Plot&#x20;
+### Multi File Plot
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 

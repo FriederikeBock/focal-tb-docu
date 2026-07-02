@@ -6,11 +6,10 @@
 
 <figure><img src="../.gitbook/assets/MezzanineAdapter_1.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/HGCROC_Mezzanine_1 (1).jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/HGCROC_Mezzanine_1.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/KCUwithMezzanines_2.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/DAQBoardWithMezzanines_1.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/RaspPi_ReconfigurationDAQBoard.jpg" alt=""><figcaption></figcaption></figure>
-

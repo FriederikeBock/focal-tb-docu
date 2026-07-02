@@ -8,7 +8,7 @@ description: >-
 
 ## HGCROC proto-boards with KCU
 
-<figure><img src="../.gitbook/assets/Screenshot from 2025-11-17 15-29-43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7)" alt=""><figcaption></figcaption></figure>
 
 The following cables need to be connected in order to setup the HGCROC for local testing:
 
@@ -21,3 +21,7 @@ The following cables need to be connected in order to setup the HGCROC for local
 Details on where each cable goes can be found in the picture above. Don't forget to also set the jumper to provide only 1.2 V after boot (right side red box in picture).
 
 * Important the `DataPort` needs to be set to <mark style="background-color:$danger;">ON</mark> hence port 11001 !!
+
+## HGCROC mezzanie boards with KCU
+
+<figure><img src="../.gitbook/assets/rn_image_picker_lib_temp_3aac4f9f-e8e4-417c-b135-5c4b9ee78af4.jpg" alt=""><figcaption></figcaption></figure>

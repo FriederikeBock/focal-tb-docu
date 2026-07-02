@@ -16,11 +16,7 @@ You will need the following software installed
   * 1G Software [link](https://gitlab.cern.ch/sjia/H2GDAQ/-/tree/dev-0v12?ref_type=heads) check out branch `dev-012`
   * 10G Software [link](https://gitlab.cern.ch/sjia/H2GDAQ) check out branch `main`
 
-
-
 Keep in mind some of these packages might need further dependencies and or compilation. Have a look at their respective installation instructions or README's.
-
-
 
 ## Setup network
 

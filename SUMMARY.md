@@ -18,16 +18,14 @@
 
 ## Readout-Setup
 
-* [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
 * [Setting up DAQ PC](readout-setup/setting-up-daq-pc.md)
+* [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
 * [Getting Started HGCROC & Calibrations KCU](readout-setup/getting-started-hgcroc-and-calibrations-kcu.md)
 * [Calibration comparisons](readout-setup/calibration-comparisons.md)
 
 ## Trigger Setup
 
-***
-
-* [Page 4](page-4.md)
+* [Page 4](trigger-setup/page-4.md)
 
 ## Online Monitoring
 
@@ -35,6 +33,4 @@
 
 ## Data Reconstruction
 
-***
-
-* [Page 5](page-5.md)
+* [Page 5](data-reconstruction/page-5.md)
