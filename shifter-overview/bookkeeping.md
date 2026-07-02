@@ -14,13 +14,13 @@ The bookkeeping system helps us to keep track of the settings of each run. It al
 
 - Once inside the run, click on **Edit Run**
 - A field with the tags will then pop up, and you can tick the tag to select it:
-<img src="../.gitbook/assets/tag_run.png">
+<img src="../.gitbook/assets/tag_run.png" width="600">
 
 - Once the runs are tagged, you'll find the beam configuration under "tags" in the logbook
-<img src="../.gitbook/assets/tag_example.png">
+<img src="../.gitbook/assets/tag_example.png" width="1000">
 
 In the future, this will help a lot to filter runs, because this can be used in the bookkeeping filter tool:
-<img src="../.gitbook/assets/logbook_filters.png">
+<img src="../.gitbook/assets/logbook_filters.png" width="600">
 
 ### Making Logs
 When problems come up during a run, note them down using the bookkeeping **Log** functionality. 
@@ -28,7 +28,7 @@ When problems come up during a run, note them down using the bookkeeping **Log**
 - Next to **Edit Run**, you will see another button, **Add log to this run**
 - Give your log a relevant name and tags, and then describe the error that came up, including any relevant error messages from infologger, etc
 
-<img src="../.gitbook/assets/log_eg.png">
+<img src="../.gitbook/assets/log_eg.png" width="1000">
 
 - Finally, click the **Post log** button to publish it
 - Once your log is posted, other people can reply to it, for example with solutions to the described problem
