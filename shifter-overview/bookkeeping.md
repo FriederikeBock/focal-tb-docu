@@ -1,7 +1,7 @@
 
 # Bookkeeping
 
-To keep track of each run that we perform during the testbeam, it is important to be consistent about recording problems and solutions as they come up. To this end, you should will need to keep track of things using two separate bookkeeping entries: 
+To keep track of each run that we perform during the testbeam, it is important to be consistent about recording problems and solutions as they come up. To this end, you will need to keep track of things using two separate bookkeeping entries: 
 - The ALICE bookkeeping system that can be accessed [here](http://alio2-flp-focal.cern.ch:4000/)
 - The Google sheet that can be accessed [here](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing)
 
