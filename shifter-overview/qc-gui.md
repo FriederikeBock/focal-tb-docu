@@ -13,3 +13,6 @@ Data monitoring during runs can now be performed by monitoring the QC layout, wh
 ## Global
 
 ## Common Problems and Solutions
+
+## IMPORTANT NOTES
+- 
