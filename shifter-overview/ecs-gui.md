@@ -20,10 +20,18 @@ Once the environment is configured, it will show that it is **CONFIGURED** and *
 
 <img src="../.gitbook/assets/env_ready.png">
 
-From within the environment, click the button to **START** the run and confirm that it begins without issue.  
+From within the environment, click the button to **START** the run and confirm that it begins without issue. 
 <img src="../.gitbook/assets/run_in_progress.png">
 
 You can then continue to monitor the run through the Infologger and QC until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
+
+## Output of runs
+
+### Raw data output
+
+### Root file output
+
+The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/home/flp/reco_output/`. 
 
 ## IMPORTANT NOTES
 
