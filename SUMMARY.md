@@ -4,7 +4,7 @@
 
 ## Overview for Shifters
 
-* [Layout](shifter-overview/general-layout.md)
+* [Introduction](shifter-overview/intro.md)
 * [ECS](shifter-overview/ecs-gui.md)
 * [QC](shifter-overview/qc-gui.md)
 * [Logs and Bookkeeping](shifter-overview/infologger.md)
