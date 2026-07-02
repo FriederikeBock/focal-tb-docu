@@ -12,7 +12,7 @@ Under "General Configuration", load the configuration **PHYSICS_FOCAL** and make
 
 <img src="../.gitbook/assets/new_environment_2.png" width="400">
 
-Finally, at the bottom of the page, create the environment using the button labelled **Deploy**. The environment will then appear under **Active Environments** and begin configuration. It will receive its own unique ID that can be used to search for issues coming from the environment in the Infologger if needed.
+Finally, at the bottom of the page, create the environment using the button labelled **Deploy**. The environment will then appear under **Active Environments** and begin configuration. It will receive its own unique ID that can be used to search for issues coming from the environment in the Infologger if needed (see next section about **controlling runs**).
 
 ## Controlling Runs
 
@@ -24,7 +24,7 @@ From within the environment, click the button to **START** the run and confirm t
 
 <img src="../.gitbook/assets/run_in_progress.png" width="700">
 
-You can then continue to monitor the run through the Infologger and QC until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
+You can then continue to monitor the run through the Infologger and QC (see dedicated section about **QC**) until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
 
 ## Output of runs
 
