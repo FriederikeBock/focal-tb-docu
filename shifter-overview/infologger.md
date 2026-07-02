@@ -15,7 +15,7 @@ There are a variety of options for what messages the infologger can be configure
 - This is mostly useful if you would like to perform a query, and look for errors that came up during a specific run or time period 
 - The filters are displayed as headers (see Hostname, Rolename, PID, etc in the image below) and can be controlled by typing in the two rows of text field below each header
 
-<img src="../.gitbook/assets/infologger.png">
+<img src="../.gitbook/assets/infologger.png" width="1000">
 
 - The first header (on the far left of the GUI) is **Date/Time**. As indicated by the GUI text, you can set the time interval you want to search in by adding the start time to the top row, and the end time to the bottom.
 - For the rest of the filters, the top row works as an include filter, while the bottom works as an exclude filter
