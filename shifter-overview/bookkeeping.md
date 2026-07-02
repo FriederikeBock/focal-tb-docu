@@ -21,7 +21,7 @@ The bookkeeping system helps us to keep track of the settings of each run. It al
 
 In the future, this will help a lot to filter runs, because this can be used in the bookkeeping filter tool:
 
-<img src="../.gitbook/assets/logbook_filters.png" width="800">
+<img src="../.gitbook/assets/logbook_filters.png" width="600">
 
 ### Making Logs
 When problems come up during a run, note them down using the bookkeeping **Log** functionality. 
