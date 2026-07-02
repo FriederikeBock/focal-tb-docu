@@ -18,10 +18,11 @@ Finally, at the bottom of the page, create the environment using the button labe
 
 Once the environment is configured, it will show that it is **CONFIGURED** and **READY** for a run. 
 
-<img src="../.gitbook/assets/env_ready.png">
+<img src="../.gitbook/assets/env_ready.png" width="1000">
 
-From within the environment, click the button to **START** the run and confirm that it begins without issue. 
-<img src="../.gitbook/assets/run_in_progress.png">
+From within the environment, click the button to **START** the run and confirm that it begins without issue.
+
+<img src="../.gitbook/assets/run_in_progress.png" width="700">
 
 You can then continue to monitor the run through the Infologger and QC until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
 
