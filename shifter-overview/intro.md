@@ -7,7 +7,6 @@ Welcome to the July 2026 FOCAL Testbeam!
 
 ## Shifter Screen Layout
 
-
 ## QUICKSTART: Run Checklist
 1. Create new environment in [Control GUI](http://alio2-flp-focal.cern.ch:8080/)
 2. Start run from within configured environment
