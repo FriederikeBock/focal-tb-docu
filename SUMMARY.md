@@ -5,6 +5,7 @@
 ## Overview for Shifters
 
 * [Introduction](shifter-overview/intro.md)
+* [Controlling the Beam](shifter-overview/beam.md)
 * [ECS](shifter-overview/ecs-gui.md)
 * [QC](shifter-overview/qc-gui.md)
 * [Error Tracking](shifter-overview/infologger.md)
