@@ -1,6 +1,6 @@
 # ECS Overview
 
-Data taking for the test beam is now controlled through the central Control system, which can be found [here](http://alio2-flp-focal.cern.ch:8080/).
+Data taking for the test beam is now controlled through the central Control system, which can be found [here](http://alio2-flp-focal.cern.ch:8080/). When you enter the ECS for the first time, click on **Global** view.
 
 ## Setting up an Environment
 
