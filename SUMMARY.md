@@ -2,6 +2,15 @@
 
 * [Welcome to the FoCal TB tutorial](README.md)
 
+## Overview for Shifters
+
+* [Layout](shifter-overview/general-layout.md)
+* [ECS](shifter-overview/ecs-gui.md)
+* [QC](shifter-overview/qc-gui.md)
+* [Infologger](shifter-overview/infologger.md)
+* [Bookkeeping](shifter-overview/bookkeeping.md)
+* [FAQ](shifter-overview/faq.md)
+
 ## Hardware Components
 
 * [Electronics](hardware-components/electronics.md)
