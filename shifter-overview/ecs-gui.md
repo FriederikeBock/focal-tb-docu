@@ -4,7 +4,13 @@ Data taking for the test beam is now controlled through the central Control syst
 
 ## Setting up an Environment
 
-Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. To create the environment, click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
+Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. This is now done through the **Global Runs** tab in the ECS GUI. Select the **FOCAL PHYSICS** configuration and the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green! You can then immediately press the **Deploy** button.
+
+<img src="../.gitbook/assets/global_runs.png" width="1000" >
+
+### (Mostly deprecated) Manually creating an environment
+
+To manually create the environment (should only be needed on expert request), click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
 
 <img src="../.gitbook/assets/new_environment_1.png" width="1000" >
 
@@ -24,15 +30,22 @@ From within the environment, click the button to **START** the run and confirm t
 
 <img src="../.gitbook/assets/run_in_progress.png" width="700">
 
+In the past, shifters had to manually start and stop sending triggers once the run had started. This is now handled automatically, but the trigger can still be monitored from the FLP terminal using the command `roc-trig-monitor --i=1165 --upd`.
+
 You can then continue to monitor the run through the Infologger and QC (see dedicated section about **QC**) until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
 
-## Output of runs
 
-### Raw data output
+## Renaming root files
 
-### Root file output
+The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/mnt/focalh-nas-1/reco_output/`. The naming convention at the creation of these files is currently `focalevents_{environment_id}.root`, because it is difficult to automatically name them using the run number. However, it is much easier to have them named using the run number, so it is your job to rename them:
 
-The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/home/flp/reco_output/`. The naming convention currently is currently `focalevents_{environment_id}.root`.
+- From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv` and press "i" to enter insert mode
+- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
+- Press the escape key to exist insert mode, and type `:wq` to close the file and write your changes
+- Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh` 
+- Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`. You should see files named for the run number now!
+
+You don't need to run this renaming every time there is a new run, but make sure when you do it you include all runs that have been done since the last time you renamed!
 
 ## IMPORTANT NOTES
 

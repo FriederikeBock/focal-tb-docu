@@ -7,7 +7,6 @@
 * [Introduction](shifter-overview/intro.md)
 * [Controlling the Beam](shifter-overview/beam.md)
 * [ECS](shifter-overview/ecs-gui.md)
-* [Trigger](shifter-overview/trigger.md)
 * [QC](shifter-overview/qc-gui.md)
 * [Error Tracking](shifter-overview/infologger.md)
 * [Bookkeeping](shifter-overview/bookkeeping.md)

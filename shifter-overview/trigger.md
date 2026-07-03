@@ -1,4 +1,4 @@
-# Trigger System
+# Trigger System (no longer needed!)
 
 ## Turning on the trigger:&#x20;
 
