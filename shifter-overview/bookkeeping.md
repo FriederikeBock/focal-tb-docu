@@ -104,7 +104,8 @@ xx
 
 # End of Shift (EOS) Reports
 During your shift, you should be compiling a document highlighting the most important parts of your shift and giving relevant information to the next shifters after you. 
-To do so, you can log into [CodyMD](https://codimd.web.cern.ch) with your CERN credentials and write in markdown using this layout:
+To do so, you can log into [CodyMD](https://codimd.web.cern.ch) with your CERN credentials and write in markdown using the layout below.
+At the end of your shift, please submit the report by pressing the +EOS report next to +log in the upper right corner in the [ALICE bookkeeping system](http://alio2-flp-focal.cern.ch:4000/), then press ECS then compile it and finally submit.
 
 # End of shift report - FOCAL - DD/MM/YYYY Morning/Afternoon/Night
 
