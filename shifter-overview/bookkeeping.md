@@ -23,6 +23,8 @@ In the future, this will help a lot to filter runs, because this can be used in 
 
 <img src="../.gitbook/assets/logbook_filters.png" width="600">
 
+At the end of the run, you should also return here and mark the run quality as **Good**, **Bad** or **Test** (for technical runs). If you mark a run as **Bad**, please make sure to attach a log explaing why it has been tagged that way.
+
 ### Making Logs
 When problems come up during a run, note them down using the bookkeeping **Log** functionality. 
 
