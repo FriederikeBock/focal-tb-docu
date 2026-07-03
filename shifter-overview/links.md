@@ -17,20 +17,6 @@
 [Google Sheets](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing)
 
 ## Extra Contact Details
-(In case we are slow on mattermost)
-
-### Tommaso: 
-
-### Friederike: 
-+1 (865) 308-7900
-
-### Shihai: 
-+45 71565444
-
-### Ian P.: 
-+45 22 72 76 11
-
-### Nina: 
-+45 71322427 (Whatsapp: +27 8181818)
+See pinned mattermost message in FoCalTB_July26 or whiteboard in control room
 
 ## FAQ 
