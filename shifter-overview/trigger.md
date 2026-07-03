@@ -15,3 +15,6 @@ cd /home/flp/LTU cat FASTLM | atb 57
 cd /home/flp/LTU cat EOT | atb 57
 ```
 {% endcode %}
+
+## IMPORTANT NOTES
+- Start the trigger after you have started the run, and stop it before you stop the run!

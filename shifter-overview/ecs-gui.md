@@ -20,7 +20,7 @@ Once the environment is configured, it will show that it is **CONFIGURED** and *
 
 <img src="../.gitbook/assets/env_ready.png" width="1000">
 
-From within the environment, click the button to **START** the run and confirm that it begins without issue.
+From within the environment, click the button to **START** the run and confirm that it begins without issue. NB: The run has not properly started until the header bar turns green and receives a run number, confirm that this has happened before continuing with the run checklist!
 
 <img src="../.gitbook/assets/run_in_progress.png" width="700">
 
