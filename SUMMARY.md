@@ -24,14 +24,7 @@
 * [Getting Started HGCROC & Calibrations KCU](readout-setup/getting-started-hgcroc-and-calibrations-kcu.md)
 * [Calibration comparisons](readout-setup/calibration-comparisons.md)
 
-## Trigger Setup
+## Expert Pages
 
-* [Page 4](trigger-setup/page-4.md)
-
-## Online Monitoring
-
-* [Page 3](online-monitoring/page-3.md)
-
-## Data Reconstruction
-
-* [Page 5](data-reconstruction/page-5.md)
+* [CRU control](expert-pages/cru-control.md)
+* [Trigger setup & control](expert-pages/trigger-setup-and-control.md)
