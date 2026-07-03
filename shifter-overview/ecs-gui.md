@@ -39,11 +39,15 @@ You can then continue to monitor the run through the Infologger and QC (see dedi
 
 The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/mnt/focalh-nas-1/reco_output/`. The naming convention at the creation of these files is currently `focalevents_{environment_id}.root`, because it is difficult to automatically name them using the run number. However, it is much easier to have them named using the run number, so it is your job to rename them:
 
-- From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv` and press "i" to enter insert mode
-- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs (in csv format!) into the mapper file
-- Press the escape key to exist insert mode, and type `:wq` to close the file and write your changes
+- From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv`
+- Press "i" to enter insert mode
+- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
+- Add in commas between the run numbers and environment IDs and delete the tabs
+- Press the escape key to exist insert mode
+- Type `:wq` and press enter to close the file and write your changes
 - Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh` 
-- Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`. You should see files named for the run number now!
+- Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`
+- You should see files named for the run number now!
 
 You don't need to run this renaming every time there is a new run, but make sure when you do it you include all runs that have been done since the last time you renamed!
 
