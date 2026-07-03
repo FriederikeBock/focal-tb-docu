@@ -12,6 +12,8 @@ python3 COMMON/sj_001_ui.py
 ```
 {% endcode %}
 
+<figure><img src="../.gitbook/assets/SJ_Gui.png" alt=""><figcaption></figcaption></figure>
+
 ## Changing the trigger delays & restarting the trigger&#x20;
 
 Setting the trigger delay:&#x20;
