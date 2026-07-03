@@ -1,6 +1,6 @@
 # Error Tracking
 
-Error monitoring during runs is done by checking the Infologger, which can be found [here](http://alio2-flp-focal.cern.ch:8081/?q={%22message%22:{%22exclude%22:%22TRG%20error%20call=%5C%22RunList%5C%22%25%0A%0ASubTimeFrame%20deserialization%20failed.%25%0A%0ADirectory%20for%20(Sub)TimeFrame%20file%20sink%20cannot%20be%20created%25%22},%22severity%22:{%22in%22:%22E%20F%22}}). 
+Error monitoring during runs is done by checking the Infologger, which can be found [here](http://alio2-flp-focal.cern.ch:8081/?q={%22message%22:{%22exclude%22:%22TRG%20error%20call=%5C%22RunList%5C%22%25%0A%0ASubTimeFrame%20deserialization%20failed.%25%0A%0ADirectory%20for%20(Sub)TimeFrame%20file%20sink%20cannot%20be%20created%25%22},%22severity%22:{%22in%22:%22E%20F%20W%22}}). 
 
 ## Infologger
 
@@ -22,10 +22,12 @@ There are a variety of options for what messages the infologger can be configure
 - So, for example, to look at error messages coming from a specific run, enter the run number in the first text field under the header **Run** 
 - Press the **Query** button again to apply the filters and update the display
 
-**NB**: These filters are not removed automatically! If you decide to switch back to **Live** mode after making a filtered query, make sure to remove whatever filters you have added. If you can't remember what you added and what was already there, reload the page with the default filter configuration we have set from the [link](http://alio2-flp-focal.cern.ch:8081/?q={%22message%22:{%22exclude%22:%22TRG%20error%20call=%5C%22RunList%5C%22%25%0A%0ASubTimeFrame%20deserialization%20failed.%25%22},%22severity%22:{%22in%22:%22E%20F%22}}). 
+**NB**: These filters are not removed automatically! If you decide to switch back to **Live** mode after making a filtered query, make sure to remove whatever filters you have added. If you can't remember what you added and what was already there, reload the page with the default filter configuration we have set from the [link](http://alio2-flp-focal.cern.ch:8081/?q={%22message%22:{%22exclude%22:%22TRG%20error%20call=%5C%22RunList%5C%22%25%0A%0ASubTimeFrame%20deserialization%20failed.%25%0A%0ADirectory%20for%20(Sub)TimeFrame%20file%20sink%20cannot%20be%20created%25%22},%22severity%22:{%22in%22:%22E%20F%20W%22}}). 
 
 ### Default Filter Settings
 Some error messages are known by us going in to the test, i.e. not important for you as the shifter to worry about. We have set up some default filter settings for the shifter layout, so that you do not have to worry about them! The link above automatically applies those filters when you load the page. If you are suddenly getting a bunch of errors, your first port of call should be to double check that you haven't accidentally removed these filters, just in case.
+
+I've decided to leave the warning messages in so it's a bit easier for experts on-site to see what went wrong when an error does occur, and for your interest! But generally, don't be too worried if you are just getting warnings.
 
 ## IMPORTANT NOTES
 - Always check your infologger mode! If an environment or run is in error and you are not seeing any error messages, make sure it is not because you are accidentally stuck in **Query**.
