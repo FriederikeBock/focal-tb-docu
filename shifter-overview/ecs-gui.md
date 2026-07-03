@@ -8,7 +8,7 @@ Before beginning a data taking run, you must first create an environment, a self
 
 <img src="../.gitbook/assets/global_runs.png" width="1000" >
 
-### (DEPRECATED - FYI) If you have to manually create an environment
+### Just in case - if you have to manually create an environment
 
 To manually create the environment (should only be needed on expert request), click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
 
@@ -40,7 +40,7 @@ You can then continue to monitor the run through the Infologger and QC (see dedi
 The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/mnt/focalh-nas-1/reco_output/`. The naming convention at the creation of these files is currently `focalevents_{environment_id}.root`, because it is difficult to automatically name them using the run number. However, it is much easier to have them named using the run number, so it is your job to rename them:
 
 - From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv` and press "i" to enter insert mode
-- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
+- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs (in csv format!) into the mapper file
 - Press the escape key to exist insert mode, and type `:wq` to close the file and write your changes
 - Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh` 
 - Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`. You should see files named for the run number now!
