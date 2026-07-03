@@ -8,7 +8,7 @@ Before beginning a data taking run, you must first create an environment, a self
 
 <img src="../.gitbook/assets/global_runs.png" width="1000" >
 
-### (Mostly deprecated) Manually creating an environment
+### (DEPRECATED - FYI) If you have to manually create an environment
 
 To manually create the environment (should only be needed on expert request), click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
 
