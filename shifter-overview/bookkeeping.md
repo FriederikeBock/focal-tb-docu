@@ -74,6 +74,8 @@ PLEASE DO NOT TRY AND CHANGE THE GOOGLE SHEETS LAYOUT.
 
 **Threshold:**
 
+**Temperature:**
+
 **Gain:**
 
 **Bias:**
