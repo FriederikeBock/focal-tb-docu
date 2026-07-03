@@ -48,6 +48,8 @@ The Google Sheet can be accessed [here](https://docs.google.com/spreadsheets/d/1
 
 **Run number:**
 
+**Environment ID:**
+
 **Run purpose:**
 
 **Number of events:**
