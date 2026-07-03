@@ -57,7 +57,7 @@ PLEASE DO NOT TRY AND CHANGE THE GOOGLE SHEETS LAYOUT.
 
 **Number of events:**
 
-**Synchronized:**
+**Root file naming:**
 
 ### Beam configuration
 **Particle:**
@@ -100,3 +100,76 @@ xx
 ## IMPORTANT NOTES
 - Don't forget to log in both locations!
 - For maximum ease of information accessibility, please don't forget to attach detailed run information to the main ALICE system (don't just log it in the sheet!) - use the template above and post it as a run log
+
+
+# End of Shift (EOS) Reports
+During your shift, you should be compiling a document highlighting the most important parts of your shift and giving relevant information to the next shifters after you. 
+To do so, you can log into [CodyMD](https://codimd.web.cern.ch) with your CERN credentials and write in markdown using this layout:
+
+# End of shift report - FOCAL - DD/MM/YYYY Morning/Afternoon/Night
+
+### Shifters: 
+- Name Surname
+- Name Surname
+
+### Issues during the shift:
+- 
+
+## SPS:
+- `xx:xx`:
+
+## SHIFT FLOW:
+- `xx:xx`:
+
+## NOTES: 
+
+## INFO FOR NEXT SHIFTER:
+
+
+
+
+
+
+You can use this as an example:
+
+# End of shift report - FOCAL - 03/07/2026 Morning
+
+### Shifters: 
+- Leonora Misciattelli Mocenigo Soranzo,
+- Monalisa Melo,
+- Misiki Bharadwaz
+
+### Issues during the shift:
+- Local home disc filled up, so we had to manually move some files. Both raw and root files are now automatically stored to the correct location.
+
+
+## SPS:
+- `07:00`: STABLE BEAM, approx. 3 spills. Only electrons 100 GeV available.
+- `13:30`: New beam files available
+
+
+## SHIFT FLOW:
+
+- `07:00`: FOCAL Shift: Start.
+    Waiting for support from expert Nina Nathanson.
+    
+- `10:00`-`12:30`: Only test runs, Tommaso and Nina debugging.
+
+- `12:30`-`13:30`: Access to TB area
+
+- `13:30`-`15:00`: Taking data
+
+- `15.00`: FOCAL Shift: End.
+
+
+## NOTES: 
+No longer using the manual Environment creation, but rather the Global Runs -> FOCAL PHYSICS -> Deploy. Consult the Shifter Overview for more information.
+
+
+## INFO FOR NEXT SHIFTER:
+No longer using the manual Environment creation, but rather the Global Runs -> FOCAL PHYSICS -> Deploy. Consult the Shifter Overview for more information. 
+
+
+
+
+
