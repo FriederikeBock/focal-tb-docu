@@ -1,4 +1,4 @@
-# ECS Overview
+# ECS
 
 Data taking for the test beam is now controlled through the central Control system, which can be found [here](http://alio2-flp-focal.cern.ch:8080/). When you enter the ECS for the first time, click on **Global** view.
 
@@ -7,61 +7,62 @@ Data taking for the test beam is now controlled through the central Control syst
 Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. This is now done through the **Global Runs** tab in the ECS GUI. Select the desired run configuration and the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green! You can then immediately press the **Deploy** button.
 
 There are a few different options for type of run:
-- A **FOCAL PHYSICS** run is the one you will (hopefully) be taking the most often. It both takes and saves data, in the form of a `.raw` and `.root` file. This is the data we will analyze during and after the testbeam
-- A **FOCAL TECHNICAL** run is similar to a physics run, but the data is not saved in any form after the run has ended. This is useful for experts to decide on settings etc before data taking, and you will execute when specifically requested by an expert
-- A **FOCAL SYNTHETIC** run replays raw data from a previous physics run, and saves a new root file output. This is mostly good for testing, and it is unlikely you will need to use it
-- A **FOCAL DEBUG** sends fake triggers when there is no beam, and is for expert use while the beam is not active
 
-<img src="../.gitbook/assets/global_runs.png" width="1000" >
+* A **FOCAL PHYSICS** run is the one you will (hopefully) be taking the most often. It both takes and saves data, in the form of a `.raw` and `.root` file. This is the data we will analyze during and after the testbeam
+* A **FOCAL TECHNICAL** run is similar to a physics run, but the data is not saved in any form after the run has ended. This is useful for experts to decide on settings etc before data taking, and you will execute when specifically requested by an expert
+* A **FOCAL SYNTHETIC** run replays raw data from a previous physics run, and saves a new root file output. This is mostly good for testing, and it is unlikely you will need to use it
+* A **FOCAL DEBUG** sends fake triggers when there is no beam, and is for expert use while the beam is not active
+
+<img src="../.gitbook/assets/global_runs.png" alt="" width="1000">
 
 ### Just in case - if you have to manually create an environment
 
 To manually create the environment (should only be needed on expert request), click on **Create**, which is listed in the left sidebar under **EXPERT**. Click on readout-dataflow, and then select the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green!
 
-<img src="../.gitbook/assets/new_environment_1.png" width="1000" >
+<img src="../.gitbook/assets/new_environment_1.png" alt="" width="1000">
 
-Under "General Configuration", load the configuration **PHYSICS_FOCAL** and make sure the run type is set to **PHYSICS**.
+Under "General Configuration", load the configuration **PHYSICS\_FOCAL** and make sure the run type is set to **PHYSICS**.
 
-<img src="../.gitbook/assets/new_environment_2.png" width="400">
+<img src="../.gitbook/assets/new_environment_2.png" alt="" width="400">
 
 Finally, at the bottom of the page, create the environment using the button labelled **Deploy**. The environment will then appear under **Active Environments** and begin configuration. It will receive its own unique ID that can be used to search for issues coming from the environment in the Infologger if needed (see next section about **controlling runs**).
 
 ## Controlling Runs
 
-Once the environment is configured, it will show that it is **CONFIGURED** and **READY** for a run. 
+Once the environment is configured, it will show that it is **CONFIGURED** and **READY** for a run.
 
-<img src="../.gitbook/assets/env_ready.png" width="1000">
+<img src="../.gitbook/assets/env_ready.png" alt="" width="1000">
 
 From within the environment, click the button to **START** the run and confirm that it begins without issue. NB: The run has not properly started until the header bar turns green and receives a run number, confirm that this has happened before continuing with the run checklist!
 
-<img src="../.gitbook/assets/run_in_progress.png" width="700">
+<img src="../.gitbook/assets/run_in_progress.png" alt="" width="700">
 
 In the past, shifters had to manually start and stop sending triggers once the run had started. This is now handled automatically, but the trigger can still be monitored from the FLP terminal using the command `roc-trig-monitor --i=1165 --upd`.
 
 You can then continue to monitor the run through the Infologger and QC (see dedicated section about **QC**) until it is time to **STOP** the run through the ECS GUI again. After the run has stopped, **SHUTDOWN** the corresponding environment.
 
-
 ## Renaming root files
 
 The ECS is currently set up to reconstruct events live as the run is happening. These root files are stored on the FLP, and can be found at `/mnt/focalh-nas-1/reco_output/`. The naming convention at the creation of these files is currently `focalevents_{environment_id}.root`, because it is difficult to automatically name them using the run number. However, it is much easier to have them named using the run number, so it is your job to rename them:
 
-- From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv`
-- Press "i" to enter insert mode
-- Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
-- Add in commas between the run numbers and environment IDs and delete the tabs
-  <img src="../.gitbook/assets/how_its_suppossed_to_look.png" width="700">
-- Press the escape key to exist insert mode
-- Type `:wq` and press enter to close the file and write your changes
-- Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh` 
-- Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`
-- You should see files named for the run number now!
+* From the FLP terminal, open the name mapper csv file: `vim /mnt/focalh-nas-1/reco_output/name_map.csv`
+* Press "i" to enter insert mode
+* Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
+*   Add in commas between the run numbers and environment IDs and delete the tabs&#x20;
+
+    <img src="../.gitbook/assets/how_its_suppossed_to_look.png" alt="" width="700">
+* Press the escape key to exist insert mode
+* Type `:wq` and press enter to close the file and write your changes
+* Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh`
+* Verify that the names have changed: `ls /mnt/focalh-nas-1/reco_output`
+* You should see files named for the run number now!
 
 You don't need to run this renaming every time there is a new run, but make sure when you do it you include all runs that have been done since the last time you renamed!
 
 ## IMPORTANT NOTES
 
-- Each environment can only be used for a single run, but they will not shut down automatically when the run is stopped -  instead, you will need to manually shutdown the environment every time, so do it as soon as the run is stopped to prevent confusion about environments.
-- Please do not **KILL** the environment! Always wait for **SHUTDOWN**.
-- Previously, there has been an issue where environments that have been shutdown do not disappear from the Control GUI. If this starts up again, don't worry about it - let us know and we will clear them, but it is low priority, just be careful to keep track of which environment you are using.
-- It is expected that once the run has started, the EPN will show **No Data**, as we do not have an EPN. 
-- DO NOT TOUCH ANYTHING UNDER THE HEADING **HARDWARE**
+* Each environment can only be used for a single run, but they will not shut down automatically when the run is stopped - instead, you will need to manually shutdown the environment every time, so do it as soon as the run is stopped to prevent confusion about environments.
+* Please do not **KILL** the environment! Always wait for **SHUTDOWN**.
+* Previously, there has been an issue where environments that have been shutdown do not disappear from the Control GUI. If this starts up again, don't worry about it - let us know and we will clear them, but it is low priority, just be careful to keep track of which environment you are using.
+* It is expected that once the run has started, the EPN will show **No Data**, as we do not have an EPN.
+* DO NOT TOUCH ANYTHING UNDER THE HEADING **HARDWARE**
