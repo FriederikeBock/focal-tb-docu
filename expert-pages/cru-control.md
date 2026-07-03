@@ -2,6 +2,14 @@
 
 ## Configuring the CRU through GUI
 
+Log in to the FLP:&#x20;
+
+{% code overflow="wrap" %}
+```shellscript
+ssh flp@alio2-flp-focal
+```
+{% endcode %}
+
 To start the GUI:&#x20;
 
 {% code overflow="wrap" %}
