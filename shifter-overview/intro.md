@@ -3,7 +3,7 @@
 Welcome to the July 2026 FOCAL Testbeam! 
 
 ## Shift Flow
-
+- At start of shift, make sure to have one of the shifters log in to their CERN account on Mattermost, etc. If it keeps logging you back in to the previous person's account, clear the browser cookies.
 
 ## Shifter Screen Layout
 
