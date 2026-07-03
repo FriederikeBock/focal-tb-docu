@@ -14,6 +14,13 @@ python3 COMMON/sj_001_ui.py
 
 <figure><img src="../.gitbook/assets/SJ_Gui.png" alt=""><figcaption></figcaption></figure>
 
+### Configurations settings
+#### RF_12_CF_10_CFC_6_CC_3_Cd_0
+* x 0 asic 0 json: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/ToT_650/SN_D25_D13/fpga1_404_ToTCalibY_20260701_173930/asic0_final_calib_i2c_L1_63.json
+* x 0 asic 1 json: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/ToT_650/SN_D25_D13/fpga1_404_ToTCalibY_20260701_173930/asic2_final_calib_i2c_L1_63.json
+* x 1 asic 0 json: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/ToT_650/SN_D05_D04/fpga1_404_ToTCalibY_20260630_144147/asic0_final_calib_i2c_L1_63.json
+* x 1 asic 1 json: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/ToT_650/SN_D05_D04/fpga1_404_ToTCalibY_20260630_144147/asic2_final_calib_i2c_L1_63.json
+
 ## Changing the trigger delays & restarting the trigger&#x20;
 
 Setting the trigger delay:&#x20;
