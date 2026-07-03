@@ -5,10 +5,35 @@ Welcome to the July 2026 FOCAL Testbeam!
 ## Shift Flow
 - At start of shift, make sure to have one of the shifters log in to their CERN account on Mattermost, etc. If it keeps logging you back in to the previous person's account, clear the browser cookies.'
 - Remember to fill out the End Of Shift report during your shift, and submit it as a log in the [ALICE bookkeeping system](http://alio2-flp-focal.cern.ch:4000/).
-- A team of 2 shifters can divide tasks by one person performing the runs and keeping track of the ALICE bookkeeping system, while the other keeps track of the Google sheets bookkeeping system
+- A team of 2 shifters can divide tasks by one person performing the runs and keeping track of the ALICE bookkeeping system, while the other keeps track of the Google Sheets bookkeeping system
+- A team of 3 shifters can divide tasks by one person performing the runs, another person keeping track of the ALICE bookkeeping system, and the third person keeping track of the Google Sheets bookkeeping system
 
 ## Shifter Screen Layout
 - The following layout can be used for convenient data taking
+
+<img src="../.gitbook/assets/Shifters screen 1.png" alt="Left-hand side screeen" width="600">
+<img src="../.gitbook/assets/Shifters screen 2.png" alt="Right-hand side screeen" width="600">
+
+**Left-hand side screen**
+- On the left-hand side screen, the runs will be executed
+- 2 important tabs should be open on this screen:
+  - The ECS Control GUI
+  - The bias voltage/amplitude modifier (Keithley)
+- The terminal should also be visible at the bottom of the screen. Here, the number of events can be seen
+
+**Right-hand side screen**
+- On the right-hand side screen, the ALICE booking will be taken care of
+- 3 windows will be open on this screen:
+  - The QC, where data can be monitored
+  - The Infologger, where you can look for errors
+  - The ALICE bookkeeping. Here, it is important to log issues if present
+
+**Laptop screen**
+- The third screen will be a personal laptop that can easily open the Google Sheets bookkeeping file
+- It is a good idea to have the ALICE bookkeeping file open on the laptop as well
+  - Here, it is important to log the run number, the environment ID, and the starting time-stamp from the ALICE bookkeeping
+  - In case of issues present, log these into the notes section of the sheet
+ 
 
 
 ## QUICKSTART: Run Checklist
