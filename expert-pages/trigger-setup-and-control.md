@@ -1,8 +1,6 @@
 # Trigger setup & control
 
-You can control the trigger SiPM bias with the following Keithley link: [http://128.141.151.107/](http://128.141.151.107/)
 
-Same user name and password as for the other one.&#x20;
 
 <div><figure><img src="../.gitbook/assets/P7010033.JPG" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/P7010073.JPG" alt=""><figcaption></figcaption></figure></div>
 
@@ -25,3 +23,6 @@ The +5V does not need to be exact, while the -5V should really be -5V or slightl
 A first efficiency analysis has been performed for the triggers based on the 2026 April LFHCal test beam.&#x20;
 
 <div><figure><img src="../.gitbook/assets/image-3.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image-4.png" alt=""><figcaption></figcaption></figure></div>
+
+You can control the trigger SiPM bias with the following Keithley link: [http://128.141.151.107/](http://128.141.151.107/). Same user name and password as for the other one.&#x20;
+
