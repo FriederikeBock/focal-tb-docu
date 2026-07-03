@@ -47,6 +47,8 @@ PLEASE DO NOT TRY AND CHANGE THE GOOGLE SHEETS LAYOUT.
 ### General information
 **Date:**
 
+**Time:**
+
 **Run number:**
 
 **Environment ID:**
