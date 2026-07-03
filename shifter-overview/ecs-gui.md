@@ -43,6 +43,7 @@ The ECS is currently set up to reconstruct events live as the run is happening. 
 - Press "i" to enter insert mode
 - Go to the bookkeeping [google sheet](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?usp=sharing) and copy the run numbers and environment IDs into the mapper file
 - Add in commas between the run numbers and environment IDs and delete the tabs
+  <img src="../.gitbook/assets/how_its_suppossed_to_look.png" width="700">
 - Press the escape key to exist insert mode
 - Type `:wq` and press enter to close the file and write your changes
 - Run the renamer using `sh /mnt/focalh-nas-1/reco_output/rename_root.sh` 
