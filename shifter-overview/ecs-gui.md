@@ -4,7 +4,13 @@ Data taking for the test beam is now controlled through the central Control syst
 
 ## Setting up an Environment
 
-Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. This is now done through the **Global Runs** tab in the ECS GUI. Select the **FOCAL PHYSICS** configuration and the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green! You can then immediately press the **Deploy** button.
+Before beginning a data taking run, you must first create an environment, a self-contained configuration of the components to be used in the run. This is now done through the **Global Runs** tab in the ECS GUI. Select the desired run configuration and the FOC detector. If you cannot select the detector, make sure you have also taken the lock, which should be green! You can then immediately press the **Deploy** button.
+
+There are a few different options for type of run:
+- A **FOCAL PHYSICS** run is the one you will (hopefully) be taking the most often. It both takes and saves data, in the form of a `.raw` and `.root` file. This is the data we will analyze during and after the testbeam
+- A **FOCAL TECHNICAL** run is similar to a physics run, but the data is not saved in any form after the run has ended. This is useful for experts to decide on settings etc before data taking, and you will execute when specifically requested by an expert
+- A **FOCAL SYNTHETIC** run replays raw data from a previous physics run, and saves a new root file output. This is mostly good for testing, and it is unlikely you will need to use it
+- A **FOCAL DEBUG** sends fake triggers when there is no beam, and is for expert use while the beam is not active
 
 <img src="../.gitbook/assets/global_runs.png" width="1000" >
 
