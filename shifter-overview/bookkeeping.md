@@ -40,6 +40,7 @@ It is important to make a log of any issues that are solved during a run unless 
 
 We also have a Google sheet for more manual tracking of information about each run's configuration settings. This will be more easily accessible outside of the CERN network (though the other system can still be viewed using [EduVPN](https://eduvpn.docs.cern.ch/)). 
 The Google Sheet can be accessed [here](https://docs.google.com/spreadsheets/d/1CEVsBG8wgO2F9DYG3_Rz1IMYbPuPbzVct7_hPUwUYgk/edit?gid=0#gid=0).
+PLEASE DO NOT TRY AND CHANGE THE GOOGLE SHEETS LAYOUT.
 
 ## Logbook Template
 
