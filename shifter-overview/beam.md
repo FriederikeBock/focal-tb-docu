@@ -1,6 +1,6 @@
 # Controlling the Beam
 
-
+The beam is controlled on the computer to the right of the shifter station, the one next to the stationary phone.
 
 ## **Electrons**
 
