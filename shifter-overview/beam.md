@@ -8,32 +8,34 @@ This is where you can change between different beam types and energies by loadin
 
 ## Loading beamfiles:
 
-To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile". 
+To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile".
 
 <img src="../.gitbook/assets/CESAR_load_beamfile.png" alt="" width="1000">
 
-Please note that the red ones are NOT available (so do not try to load them!)
-For the electrons, the noted energy is negative because the electrons are negatively charged.
+Please note that the red ones are NOT available (so do not try to load them!) For the electrons, the noted energy is negative because the electrons are negatively charged.
 
-If the load beam file button is not available, you have to press the stop button in the upper right corner to stop the loaded beamfile before you can load the new one. 
+If the load beam file button is not available, you have to press the stop button in the upper right corner to stop the loaded beamfile before you can load the new one.
 
 Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on. Wait for everything to turn **green**, and then you will be able to take data with the new configuration.
 
-Some of the magnets can be quite slow to turn green: don't worry, this is normal. 
+Some of the magnets can be quite slow to turn green: don't worry, this is normal.
 
 ### THIS SHOULD RARELY HAPPEN!
+
 However, if these are the 3 magnets: BEND.022.117, BEND.022.053 or BEND.022.083, you should manually change their current settings as they might not be configured correctly automatically.
 
-Also note that XCIO.022.450 will not turn green, and will stay yellow as it is **OUT** of the configuration. 
+Also note that XCIO.022.450 will not turn green, and will stay yellow as it is **OUT** of the configuration.
 
 #### Setting magnet current to beam ref (for BEND.022.117, BEND.022.053 and BEND.022.083)
+
 If these 3 bending magnets are not turning green a couple of minutes after loading the beam file, you should manually change their settings. To do so, press on the magnet status icon in the upper left corner:
 
 <img src="../.gitbook/assets/CESAR_GUI.png" alt="" width="1000">
 
-Then press on the magnet name, and set it to Beamref. 
+Then press on the magnet name, and set it to Beamref.
 
-##### DEPRECATED: manually setting the magnet current
+**DEPRECATED: manually setting the magnet current**
+
 If this is not possible, you can manually set the current to the beamref value like this:
 
 <img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
@@ -56,8 +58,7 @@ Check the Run and Accumulate boxes at the bottom of the interface and wait for a
 
 ### Hadrons (+)
 
-<table><thead><tr><th>beam profile name</th><th width="183">energy (GeV)</th><th width="183">approximate purity</th><th>approximate number of part/spill</th><th data-type="image"></th><th></th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.036</td><td>60</td><td></td><td>~1.6K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.035</td><td>80</td><td></td><td>~8.4K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.034</td><td>100</td><td></td><td>~17K</td><td><a href="../.gitbook/assets/H4.Profile.Monitors.2026.07.04.01.03.56.png">H4.Profile.Monitors.2026.07.04.01.03.56.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792">https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792</a></td></tr><tr><td>H4A.ALICE FOCAL.033</td><td>150</td><td></td><td>~44K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.024</td><td>200</td><td></td><td>~14-16K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.030</td><td>250</td><td></td><td>~8.5K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.037</td><td>300</td><td></td><td>~3.7K???</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.038</td><td>350</td><td></td><td>~65K???</td><td></td><td></td></tr></tbody></table>
-
+<table><thead><tr><th width="219">beam profile name</th><th width="84">energy (GeV)</th><th width="95">approximate purity</th><th>approximate number of part/spill</th><th data-type="image"></th><th></th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.036</td><td>60</td><td></td><td>~1.6K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.035</td><td>80</td><td></td><td>~0.2K (1mu s deadtime)</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.034</td><td>100</td><td></td><td>~17K</td><td><a href="../.gitbook/assets/H4.Profile.Monitors.2026.07.04.01.03.56.png">H4.Profile.Monitors.2026.07.04.01.03.56.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792">https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792</a></td></tr><tr><td>H4A.ALICE FOCAL.033</td><td>150</td><td></td><td>~44K</td><td><a href="../.gitbook/assets/H4.Delay.Wire.Chambers.Profile.2026.07.04.11.28.52.png">H4.Delay.Wire.Chambers.Profile.2026.07.04.11.28.52.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635996">https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635996</a></td></tr><tr><td>H4A.ALICE FOCAL.039</td><td>150</td><td></td><td>~20K</td><td><a href="../.gitbook/assets/H4.Delay.Wire.Chambers.Profile.2026.07.04.11.28.52.png">H4.Delay.Wire.Chambers.Profile.2026.07.04.11.28.52.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635996">https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635996</a></td></tr><tr><td>H4A.ALICE FOCAL.024</td><td>200</td><td></td><td>~14-16K</td><td><a href="../.gitbook/assets/H4.Delay.Wire.Chambers.Profile.2026.07.04.10.44.49.png">H4.Delay.Wire.Chambers.Profile.2026.07.04.10.44.49.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635987">https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635987</a></td></tr><tr><td>H4A.ALICE FOCAL.030</td><td>250</td><td></td><td>~8.5K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.037</td><td>300</td><td></td><td>~3.7K???</td><td><a href="../.gitbook/assets/H4.Delay.Wire.Chambers.Profile.2026.07.04.11.09.45.png">H4.Delay.Wire.Chambers.Profile.2026.07.04.11.09.45.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598841">https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598841</a></td></tr><tr><td>H4A.ALICE FOCAL.038</td><td>350</td><td></td><td>~65K???</td><td><a href="../.gitbook/assets/H4.Delay.Wire.Chambers.Profile.2026.07.04.10.57.10 (1).png">H4.Delay.Wire.Chambers.Profile.2026.07.04.10.57.10 (1).png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635992">https://be-op-logbook.web.cern.ch/elogbook-server#/fullScreenImg?img=4635992</a></td></tr><tr><td>H4A.ALICE FOCAL.042</td><td>350</td><td></td><td>~17K</td><td></td><td></td></tr></tbody></table>
 
 ## Opening and closing the door:
 
