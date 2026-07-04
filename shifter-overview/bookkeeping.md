@@ -90,6 +90,15 @@ PLEASE DO NOT TRY AND CHANGE THE GOOGLE SHEETS LAYOUT.
 
 **Saved:**
 
+
+### Environment problems:
+**Had to kill environment:**
+
+**Environment died:**
+
+**Time to restart:**
+
+
 ### Other
 **QC:**
 
