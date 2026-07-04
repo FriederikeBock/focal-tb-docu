@@ -28,3 +28,4 @@
 
 * [CRU control](expert-pages/cru-control.md)
 * [Trigger setup & control](expert-pages/trigger-setup-and-control.md)
+* [RoC (Readout Chip) Configuration](expert-pages/roc-config.md)
