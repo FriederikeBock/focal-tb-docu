@@ -2,7 +2,7 @@
 
 The beam is controlled on the computer to the right of the shifter station, the one next to the stationary phone:
 
-<img src="../.gitbook/assets/beam_control_station.pdf" width="1000">
+<img src="../.gitbook/assets/beam_control_station.png" width="1000">
 
 This is where you can change between different beam types and energies by loading beamfiles, check the beam quality through the beam profiles and open/close the door into the test beam area if an access is needed. All of this is done using the CESAR GUI.
 
@@ -17,7 +17,7 @@ Please note that for the electrons, the noted energy is negative because the ele
 
 Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on: wait for everything to turn green, and then you will be able to take data with the new configuration. 
 
-<img src="../.gitbook/assets/loading_beamfile.pdf" width="1000">
+<img src="../.gitbook/assets/loading_beamfile.png" width="1000">
 
 Three of the magnets can be quite slow to turn green: don't worry, this is normal.
 
