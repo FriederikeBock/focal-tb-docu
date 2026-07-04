@@ -32,7 +32,7 @@ If these 3 bending magnets are not turning green a couple of minutes after loadi
 Then press on the magnet name, then Set to Beamref. 
 
 #### DEPRECATED: manually setting the magnet current
-If this is not possible, you can manually set the current to the beamred value like this:
+If this is not possible, you can manually set the current to the beamref value like this:
 <img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
 
 ## Checking beam profiles:
