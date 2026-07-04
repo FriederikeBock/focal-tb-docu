@@ -56,7 +56,7 @@ To do so, go Access -> Access Command -> Beam On, and log in with your CERN acco
 
 It is not possible to access the area unless you press on the yellow door icon and on Open.
 
-To close and turn the beam back on, you must first Close the door through the yellow door icon and then once the area is Safe again, you can turn the beam back on and load a new beamfile.
+To close and turn the beam back on, you must first Close the door through the yellow door icon and then once the area is Safe again, you can turn the beam back on and load a new beamfile. These steps once again require you to log in using your CERN credentials.
 
 ## **Electrons**
 
