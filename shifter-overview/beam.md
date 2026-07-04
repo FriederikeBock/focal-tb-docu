@@ -37,6 +37,8 @@ If this is not possible, you can manually set the current to the beamref value l
 
 <img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
 
+NOTE! This is a DEPRECATED procedure, and should NOT be normally done by shifters.
+
 ## Checking beam profiles:
 
 Once you have loaded a beamfile, it is always good to check the quality of the beam through the beam profile, which is available here:
