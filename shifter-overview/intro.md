@@ -15,8 +15,6 @@ Welcome to the July 2026 FOCAL Testbeam!
 
 <img src="../.gitbook/assets/Shifters screen 1.png" alt="Left-hand side screeen" width="600">
 
-&#x20;
-
 <img src="../.gitbook/assets/Shifters screen 2.png" alt="Right-hand side screeen" width="600">
 
 **Left-hand side screen**
