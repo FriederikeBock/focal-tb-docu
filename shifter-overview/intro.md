@@ -4,8 +4,8 @@ Welcome to the July 2026 FOCAL Testbeam!
 
 ## Shift Flow
 
-* At start of shift, make sure to have one of the shifters log in to their CERN account on Mattermost, etc. If it keeps logging you back in to the previous person's account, clear the browser cookies.'
-* Remember to fill out the End Of Shift report during your shift, and submit it as a log in the [ALICE bookkeeping system](http://alio2-flp-focal.cern.ch:4000/).
+* At start of shift, make sure to have one of the shifters log in to their CERN account on Mattermost, etc. If it keeps logging you back in to the previous person's account, clear the browser cookies.
+* Remember to fill out the End Of Shift (EOS) report during your shift, and submit it as a log in the [ALICE bookkeeping system](http://alio2-flp-focal.cern.ch:4000/). At the beginning of your shift, read the previous shifter's EOS report, so that you are aware of what has been going on before your shift.
 * A team of 2 shifters can divide tasks by one person performing the runs and keeping track of the ALICE bookkeeping system, while the other keeps track of the Google Sheets bookkeeping system
 * A team of 3 shifters can divide tasks by one person performing the runs, another person keeping track of the ALICE bookkeeping system, and the third person keeping track of the Google Sheets bookkeeping system
 
