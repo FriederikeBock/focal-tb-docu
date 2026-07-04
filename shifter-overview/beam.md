@@ -26,7 +26,10 @@ Once you have loaded a beamfile, it is always good to check the quality of the b
 
 <img src="../.gitbook/assets/CESAR_beamprofiles.png" alt="" width="1000">
 
-The beam profiles are supposed to look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), like you can see on the bottom left beam profile in the picture above.
+This button shows all the available beam profiles, but in reality, the most important one is the Delay Wire Chamber Profile (available in the button with the blue Gaussian and just the clock: if you're in doubt, you can swipe the mouse without clicking on the icons to see a short description of each icon).
+
+Check the Run and Accumulate boxes in the bottom of the interface and wait for a little bit to get decent statistics. The beam profiles are supposed to look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), like you can see on the bottom left beam profile in the picture above. Consult the beam-specific beam profile in the table below to see example images of what each specific beam profile is supposed to look like.
+
 
 ## Opening and closing the door:
 
