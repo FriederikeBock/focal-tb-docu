@@ -4,15 +4,21 @@
 The signal from SiPMs is weak and fast, so it needs to be amplified and digitized. This is done by the RoC (Readout Chip) which is H2GCROC in our case.
 Configuring the RoC is done via a Terminal UI in the FLP. As always, you need to log in to the FLP first:
 
-{% code overflow="wrap" %}
 ```shellscript
 ssh flp@alio2-flp-focal
 ```
-{% endcode %}
 
-<div style="border-left: 4px solid #0969da; background: #ddf4ff; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Note:</strong> If you cannot ssh into the FLP, you can try to ping it using the command <code>ping alio2-flp-focal</code>. If you cannot ping it, call Shihai/Tommaso.
-</div>
+> **Note:** If you cannot ssh into the FLP, you can try to ping it using the command `ping alio2-flp-focal`. If you cannot ping it, call Shihai/Tommaso.
+
+## Program the CRU
+
+(run as root)
+
+```shellscript
+cd ~/focaltb_fw/2025-10
+for i in 1; do /root/intelFPGA_pro/24.1/qprogrammer/quartus/bin/quartus_pgm --cable=$i --mode=JTAG --operation="p;cru_paddedx12.sof"; done;
+source ~/rescan_only.sh
+```
 
 ## Load the configuration files
 
@@ -28,36 +34,34 @@ The sequence of steps for loading the configuration files for the "old firmware"
 7. Initialize the lpGBT (same as step 2)
 8. Set the User Logic
 
-<div style="border-left: 4px solid #0969da; background: #ddf4ff; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Note:</strong> The "new firmware" is not verified by July 4th, so only the "old firmware" sequence should be followed.
-</div>
+> **Note:** The "new firmware" is not verified by July 4th, so only the "old firmware" sequence should be followed.
 
 ### Open the Terminal UI
 
 First, we need to open the Terminal UI:
 
-{% code overflow="wrap" %}
 ```shellscript
 cd /home/flp/cru-sw
 source .venv/bin/activate
 python3 COMMON/sj_001_ui.py
 ```
-{% endcode %}
 
 Then you should see it pop up like this:
 
-<img src="../.gitbook/assets/TUI_main.png" width="600">
+![TUI main screen](../.gitbook/assets/TUI_main.png)
 
 ### Set the local clock source
 
-<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Warning:</strong> We only need to do this if it is made clear that we are using the old firmware
-</div>
+> **Warning:** We only need to do this if it is made clear that we are using the old firmware.
 
 To change the clock source, go to the `Connection` tab on the left, and in the `clock-config.py` section:
-<img src="../.gitbook/assets/TUI_clock_local.png" width="600">
+
+![TUI local clock source](../.gitbook/assets/TUI_clock_local.png)
+
 Set the `Clock source` to `local` and **uncheck** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the following output if successful:
-<img src="../.gitbook/assets/TUI_clock_success.png" width="600">
+
+![TUI clock success output](../.gitbook/assets/TUI_clock_success.png)
+
 If the number of up links are not 2, or it fails, **retry 3 times**. If it still fails, call Shihai.
 
 ### Initialize the lpGBT
@@ -81,18 +85,19 @@ x 1 ASIC 0: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/SN_
 x 1 ASIC 1: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD12_final_calib_i2c_L1_40_dummy.json
 
 Then, click the `Load JSON configs` button, and you should see the following output flowing in the log window:
-<img src="../.gitbook/assets/TUI_i2c_running.png" width="600"> 
+
+![TUI I2C running output](../.gitbook/assets/TUI_i2c_running.png)
 
 If you see lots of RD_WAIT errors, make sure which firmware is loaded and check with experts if you need to do the `Set the local clock source` step above.
 
 ### Unset the local clock source / Set the LTU clock source
 
-<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Warning:</strong> Only do this if it is made clear that we are using the old firmware, and you have already set the local clock source.
-</div>
+> **Warning:** Only do this if it is made clear that we are using the old firmware, and you have already set the local clock source.
 
 It is the same section but the reverse. 
-<img src="../.gitbook/assets/TUI_clock_ttc.png" width="600">
+
+![TUI LTU clock source](../.gitbook/assets/TUI_clock_ttc.png)
+
 Set the `Clock source` to `ltu` and **check** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the same output as above if successful.
 
 ### Set the roc-config
