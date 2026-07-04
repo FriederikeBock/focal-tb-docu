@@ -49,6 +49,14 @@ This button shows all the available beam profiles, but in reality, the most impo
 
 Check the Run and Accumulate boxes in the bottom of the interface and wait for a little bit to get decent statistics. The beam profiles are supposed to look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), like you can see on the bottom left beam profile in the picture above. Consult the beam-specific beam profile in the table below to see example images of what each specific beam profile is supposed to look like.
 
+### **Electrons**
+
+<table><thead><tr><th>beam profile name</th><th width="183">energy (G</th><th>approximate purity</th><th>approximate number of part/spill</th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.000</td><td>20</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.001</td><td>40</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.002</td><td>60</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.003</td><td>80</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.004</td><td>100</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.005</td><td>150</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.006</td><td>200</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.022</td><td>250</td><td>~70%</td><td>~6.1K</td></tr><tr><td>H4A.ALICE FOCAL.023</td><td>300</td><td>~50%</td><td>~1K</td></tr></tbody></table>
+
+### Hadrons (+)
+
+<table><thead><tr><th>beam profile name</th><th width="183">energy (GeV)</th><th width="183">approximate purity</th><th>approximate number of part/spill</th><th data-type="image"></th><th></th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.036</td><td>60</td><td></td><td>~1.6K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.035</td><td>80</td><td></td><td>~8.4K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.034</td><td>100</td><td></td><td>~17K</td><td><a href="../.gitbook/assets/H4.Profile.Monitors.2026.07.04.01.03.56.png">H4.Profile.Monitors.2026.07.04.01.03.56.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792">https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792</a></td></tr><tr><td>H4A.ALICE FOCAL.033</td><td>150</td><td></td><td>~44K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.024</td><td>200</td><td></td><td>~14-16K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.030</td><td>250</td><td></td><td>~8.5K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.037</td><td>300</td><td></td><td>~3.7K???</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.038</td><td>350</td><td></td><td>~65K???</td><td></td><td></td></tr></tbody></table>
+
 
 ## Opening and closing the door:
 
@@ -61,11 +69,3 @@ To do so, go Access -> Access Command -> Beam On, and log in with your CERN acco
 It is not possible to access the area unless you press on the yellow door icon and on Open.
 
 To close and turn the beam back on, you must first Close the door through the yellow door icon and then once the area is Safe again, you can turn the beam back on and load a new beamfile. These steps once again require you to log in using your CERN credentials.
-
-## **Electrons**
-
-<table><thead><tr><th>beam profile name</th><th width="183">energy (G</th><th>approximate purity</th><th>approximate number of part/spill</th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.000</td><td>20</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.001</td><td>40</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.002</td><td>60</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.003</td><td>80</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.004</td><td>100</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.005</td><td>150</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.006</td><td>200</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.022</td><td>250</td><td>~70%</td><td>~6.1K</td></tr><tr><td>H4A.ALICE FOCAL.023</td><td>300</td><td>~50%</td><td>~1K</td></tr></tbody></table>
-
-## Hadrons (+)
-
-<table><thead><tr><th>beam profile name</th><th width="183">energy (GeV)</th><th width="183">approximate purity</th><th>approximate number of part/spill</th><th data-type="image"></th><th></th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.036</td><td>60</td><td></td><td>~1.6K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.035</td><td>80</td><td></td><td>~8.4K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.034</td><td>100</td><td></td><td>~17K</td><td><a href="../.gitbook/assets/H4.Profile.Monitors.2026.07.04.01.03.56.png">H4.Profile.Monitors.2026.07.04.01.03.56.png</a></td><td><a href="https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792">https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/4598792</a></td></tr><tr><td>H4A.ALICE FOCAL.033</td><td>150</td><td></td><td>~44K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.024</td><td>200</td><td></td><td>~14-16K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.030</td><td>250</td><td></td><td>~8.5K</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.037</td><td>300</td><td></td><td>~3.7K???</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.038</td><td>350</td><td></td><td>~65K???</td><td></td><td></td></tr></tbody></table>
