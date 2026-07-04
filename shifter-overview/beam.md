@@ -6,8 +6,6 @@ The beam is controlled on the computer to the right of the shifter station, the 
 
 This is where you can change between different beam types and energies by loading beamfiles, check the beam quality through the beam profiles and open/close the door into the test beam area if an access is needed. All of this is done using the CESAR GUI.
 
-<img src="../.gitbook/assets/CESAR_GUI.png" alt="" width="1000">
-
 ## Loading beamfiles:
 
 To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile". 
@@ -26,12 +24,16 @@ However, if these are the 3 magnets: BEND.022.117, BEND.022.053 or BEND.022.083,
 
 Also note that XCIO.022.450 will not turn green, and will stay yellow as it is OUT of the configuration. 
 
-### Manually changing the magnet current (for BEND.022.117, BEND.022.053 and BEND.022.083)
+### Setting magnet current to beam ref (for BEND.022.117, BEND.022.053 and BEND.022.083)
 If these 3 bending magnets are not turning green a couple of minutes after loading the beam file, you should manually change their settings. To do so, press on the magnet status icon in the upper left corner:
 
-<img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
+<img src="../.gitbook/assets/CESAR_GUI.png" alt="" width="1000">
 
-Then press on the magnet name, then Set Current and finally insert the current that you can see on the beamprofile overview in the device reference column.
+Then press on the magnet name, then Set to Beamref. 
+
+#### DEPRECATED: manually setting the magnet current
+If this is not possible, you can manually set the current to the beamred value like this:
+<img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
 
 ## Checking beam profiles:
 
