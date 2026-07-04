@@ -1,6 +1,48 @@
 # Controlling the Beam
 
-The beam is controlled on the computer to the right of the shifter station, the one next to the stationary phone.
+The beam is controlled on the computer to the right of the shifter station, the one next to the stationary phone:
+
+<img src="../.gitbook/assets/beam_control_station.pdf" width="1000">
+
+This is where you can change between different beam types and energies by loading beamfiles, check the beam quality through the beam profiles and open/close the door into the test beam area if an access is needed. All of this is done using the CESAR GUI.
+
+<img src="../.gitbook/assets/CESAR_GUI.png" width="1000">
+
+## Loading beamfiles:
+To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile". 
+
+<img src="../.gitbook/assets/CESAR_load_beamfile.png" width="1000">
+
+Please note that for the electrons, the noted energy is negative because the electrons are negatively charged.
+
+Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on: wait for everything to turn green, and then you will be able to take data with the new configuration. 
+
+<img src="../.gitbook/assets/loading_beamfile.pdf" width="1000">
+
+Three of the magnets can be quite slow to turn green: don't worry, this is normal.
+
+
+## Checking beam profiles:
+Once you have loaded a beamfile, it is always good to check the quality of the beam through the beam profile, which is available here:
+
+<img src="../.gitbook/assets/CESAR_beamprofiles.png" width="1000">
+
+The beam profiles are supposed to look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), like you can see on the bottom left beam profile in the picture above. 
+
+
+## Opening and closing the door:
+
+During your shift, someone might need to access the beam area: if this happens, you must be able to turn off the beam, make the area safe and open the door through the CESAR GUI.
+
+To do so, go Access -> Access Command -> Beam On, and log in with your CERN account credentials. The GUI will tell you to wait for a couple of minutes, and at a certain point in the upper left of the interface, it will say that the beam is no longer on and that the area is safe.
+
+<img src="../.gitbook/assets/CESAR_opendoor.png" width="1000">
+
+It is not possible to access the area unless you press on the yellow door icon and on Open.
+
+To close and turn the beam back on, you must first Close the door through the yellow door icon and then once the area is Safe again, you can turn the beam back on and load a new beamfile.
+
+
 
 ## **Electrons**
 
