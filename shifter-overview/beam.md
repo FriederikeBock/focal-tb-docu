@@ -12,32 +12,33 @@ To load a beamfile, first press on the icon looking like a piece of paper in the
 
 <img src="../.gitbook/assets/CESAR_load_beamfile.png" alt="" width="1000">
 
-Please note that the red ones are NOT available (so do not try to load them!) and that for the electrons, the noted energy is negative because the electrons are negatively charged.
+Please note that the red ones are NOT available (so do not try to load them!)
+For the electrons, the noted energy is negative because the electrons are negatively charged.
 
-If the load beam file button is not available, you have to press the stop button in the upper right corner to stop the loaded beamfile from before before you can load the new one. 
+If the load beam file button is not available, you have to press the stop button in the upper right corner to stop the loaded beamfile before you can load the new one. 
 
-Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on: wait for everything to turn green, and then you will be able to take data with the new configuration.
+Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on. Wait for everything to turn **green**, and then you will be able to take data with the new configuration.
 
 Some of the magnets can be quite slow to turn green: don't worry, this is normal. 
 
 ### THIS SHOULD RARELY HAPPEN!
 However, if these are the 3 magnets: BEND.022.117, BEND.022.053 or BEND.022.083, you should manually change their current settings as they might not be configured correctly automatically.
 
-Also note that XCIO.022.450 will not turn green, and will stay yellow as it is OUT of the configuration. 
+Also note that XCIO.022.450 will not turn green, and will stay yellow as it is **OUT** of the configuration. 
 
 #### Setting magnet current to beam ref (for BEND.022.117, BEND.022.053 and BEND.022.083)
 If these 3 bending magnets are not turning green a couple of minutes after loading the beam file, you should manually change their settings. To do so, press on the magnet status icon in the upper left corner:
 
 <img src="../.gitbook/assets/CESAR_GUI.png" alt="" width="1000">
 
-Then press on the magnet name, then Set to Beamref. 
+Then press on the magnet name, and set it to Beamref. 
 
 ##### DEPRECATED: manually setting the magnet current
 If this is not possible, you can manually set the current to the beamref value like this:
 
 <img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
 
-NOTE! This is a DEPRECATED procedure, and should NOT be normally done by shifters.
+NOTE! This is a DEPRECATED procedure, and should **NOT** be normally done by shifters.
 
 ## Checking beam profiles:
 
@@ -47,7 +48,7 @@ Once you have loaded a beamfile, it is always good to check the quality of the b
 
 This button shows all the available beam profiles, but in reality, the most important one is the Delay Wire Chamber Profile (available in the button with the blue Gaussian and just the clock: if you're in doubt, you can swipe the mouse without clicking on the icons to see a short description of each icon).
 
-Check the Run and Accumulate boxes in the bottom of the interface and wait for a little bit to get decent statistics. The beam profiles are supposed to look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), like you can see on the bottom left beam profile in the picture above. Consult the beam-specific beam profile in the table below to see example images of what each specific beam profile is supposed to look like.
+Check the Run and Accumulate boxes at the bottom of the interface and wait for a little bit to get decent statistics. The beam profiles are should look quite Gaussian, but might be a bit negatively skewed (= shifted to the right), as you can see in the bottom left beam profile in the picture above. Consult the beam-specific beam profile in the table below to see example images of what each specific beam profile is supposed to look like.
 
 ### **Electrons**
 
@@ -60,12 +61,12 @@ Check the Run and Accumulate boxes in the bottom of the interface and wait for a
 
 ## Opening and closing the door:
 
-During your shift, someone might need to access the beam area: if this happens, you must be able to turn off the beam, make the area safe and open the door through the CESAR GUI.
+During your shift, someone might need to access the beam area. If this happens, you must turn off the beam, make the area safe and open the door through the CESAR GUI.
 
-To do so, go Access -> Access Command -> Beam On, and log in with your CERN account credentials. The GUI will tell you to wait for a couple of minutes, and at a certain point in the upper left of the interface, it will say that the beam is no longer on and that the area is safe.
+To do so, go to Access -> Access Command -> Beam On, and log in with your CERN account credentials. The GUI will tell you to wait for a couple of minutes, and at a certain point in the upper left of the interface, it will say that the beam is no longer on and that the area is safe.
 
 <img src="../.gitbook/assets/CESAR_opendoor.png" alt="" width="1000">
 
-It is not possible to access the area unless you press on the yellow door icon and on Open.
+It is not possible to access the area unless you press on the yellow door icon and then on Open.
 
-To close and turn the beam back on, you must first Close the door through the yellow door icon and then once the area is Safe again, you can turn the beam back on and load a new beamfile. These steps once again require you to log in using your CERN credentials.
+To close and turn the beam back on, you must first close the door through the yellow door icon, and then once the area is safe again, you can turn the beam back on and load a new beamfile. These steps once again require you to log in using your CERN credentials.
