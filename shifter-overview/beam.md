@@ -10,15 +10,28 @@ This is where you can change between different beam types and energies by loadin
 
 ## Loading beamfiles:
 
-To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile".
+To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile". 
 
 <img src="../.gitbook/assets/CESAR_load_beamfile.png" alt="" width="1000">
 
-Please note that for the electrons, the noted energy is negative because the electrons are negatively charged.
+Please note that the red ones are NOT available (so do not try to load them!) and that for the electrons, the noted energy is negative because the electrons are negatively charged.
+
+If the load beam file button is not available, you have to press the stop button in the upper right corner to stop the loaded beamfile from before before you can load the new one. 
 
 Once you have loaded the beam file, another screen pops up where you can visualise the status of the magnets and so on: wait for everything to turn green, and then you will be able to take data with the new configuration.
 
-Three of the magnets can be quite slow to turn green: don't worry, this is normal.
+Some of the magnets can be quite slow to turn green: don't worry, this is normal. 
+
+However, if these are the 3 magnets: BEND.022.117, BEND.022.053 or BEND.022.083, you should manually change their current settings as they might not be configured correctly automatically.
+
+Also note that XCIO.022.450 will not turn green, and will stay yellow as it is OUT of the configuration. 
+
+### Manually changing the magnet current (for BEND.022.117, BEND.022.053 and BEND.022.083)
+If these 3 bending magnets are not turning green a couple of minutes after loading the beam file, you should manually change their settings. To do so, press on the magnet status icon in the upper left corner:
+
+<img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
+
+Then press on the magnet name, then Set Current and finally insert the current that you can see on the beamprofile overview in the device reference column.
 
 ## Checking beam profiles:
 
