@@ -20,19 +20,21 @@ Once you have loaded the beam file, another screen pops up where you can visuali
 
 Some of the magnets can be quite slow to turn green: don't worry, this is normal. 
 
+### THIS SHOULD RARELY HAPPEN!
 However, if these are the 3 magnets: BEND.022.117, BEND.022.053 or BEND.022.083, you should manually change their current settings as they might not be configured correctly automatically.
 
 Also note that XCIO.022.450 will not turn green, and will stay yellow as it is OUT of the configuration. 
 
-### Setting magnet current to beam ref (for BEND.022.117, BEND.022.053 and BEND.022.083)
+#### Setting magnet current to beam ref (for BEND.022.117, BEND.022.053 and BEND.022.083)
 If these 3 bending magnets are not turning green a couple of minutes after loading the beam file, you should manually change their settings. To do so, press on the magnet status icon in the upper left corner:
 
 <img src="../.gitbook/assets/CESAR_GUI.png" alt="" width="1000">
 
 Then press on the magnet name, then Set to Beamref. 
 
-#### DEPRECATED: manually setting the magnet current
+##### DEPRECATED: manually setting the magnet current
 If this is not possible, you can manually set the current to the beamref value like this:
+
 <img src="../.gitbook/assets/CESAR_setmagnetcurrent.png" alt="" width="1000">
 
 ## Checking beam profiles:
