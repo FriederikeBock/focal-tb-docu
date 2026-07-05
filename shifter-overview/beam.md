@@ -66,7 +66,7 @@ Check the Run and Accumulate boxes at the bottom of the interface and wait for a
 
 During your shift, someone might need to access the beam area. If this happens, you must turn off the beam, make the area safe and open the door through the CESAR GUI.
 
-To do so, go to Access -> Access Command -> Open, and log in with your CERN account credentials. The GUI will tell you to wait for a couple of minutes, and at a certain point in the upper left of the interface, it will say that the beam is no longer on and that the area is safe.
+To do so, go to Access -> Access Command and select the door PPE134, then Open, and log in with your CERN account credentials. The GUI will tell you to wait for a couple of minutes, and at a certain point in the upper left of the interface, it will say that the beam is no longer on and that the area is safe.
 
 <img src="../.gitbook/assets/CESAR_opendoor.png" alt="" width="1000">
 
