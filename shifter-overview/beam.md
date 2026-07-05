@@ -56,7 +56,18 @@ Check the Run and Accumulate boxes at the bottom of the interface and wait for a
 
 ### **Electrons**
 
-<table><thead><tr><th>beam profile name</th><th width="183">energy (G</th><th>approximate purity</th><th>approximate number of part/spill</th></tr></thead><tbody><tr><td>H4A.ALICE FOCAL.000</td><td>20</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.001</td><td>40</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.002</td><td>60</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.003</td><td>80</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.004</td><td>100</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.005</td><td>150</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.006</td><td>200</td><td></td><td></td></tr><tr><td>H4A.ALICE FOCAL.022</td><td>250</td><td>~70%</td><td>~6.1K</td></tr><tr><td>H4A.ALICE FOCAL.023</td><td>300</td><td>~50%</td><td>~1K</td></tr></tbody></table>
+<table>
+  <thead>
+    <tr><th>beam profile name</th> <th width="183">energy (G</th> <th>approximate purity</th> <th>approximate number of part/spill</th></tr></thead><tbody>
+      <tr><td>H4A.ALICE FOCAL.000</td><td>20</td> <td> </td> <td> </td></tr>
+      <tr><td>H4A.ALICE FOCAL.001</td><td>40</td> <td> </td> <td> </td></tr>
+      <tr><td>H4A.ALICE FOCAL.002</td><td>60</td> <td> </td> <td> </td></tr>
+      <tr><td>H4A.ALICE FOCAL.003</td><td>80</td> <td> </td> <td> </td></tr>
+      <tr><td>H4A.ALICE FOCAL.004</td><td>100</td> <td> </td> <td> ~15k </td></tr>
+      <tr><td>H4A.ALICE FOCAL.005</td><td>150</td> <td> </td> <td> ~13.5k </td></tr>
+      <tr><td>H4A.ALICE FOCAL.006</td><td>200</td> <td> </td> <td> ~4.6k </td></tr>
+      <tr><td>H4A.ALICE FOCAL.022</td><td>250</td> <td> ~70% </td> <td>~6.1K</td></tr>
+      <tr><td>H4A.ALICE FOCAL.023</td> <td>300</td> <td> ~50% </td> <td>~1K</td> </tr></tbody></table>
 
 ### Hadrons (+)
 
