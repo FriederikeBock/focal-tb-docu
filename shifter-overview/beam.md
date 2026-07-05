@@ -8,6 +8,8 @@ This is where you can change between different beam types and energies by loadin
 
 ## Loading beamfiles:
 
+PLEASE NOTE THAT IT IS NOT POSSIBLE TO LOAD A BEAMFILE IF THERE IS NO BEAM.
+
 To load a beamfile, first press on the icon looking like a piece of paper in the upper right to visualise all the available beamfiles, then press on the one you want and finally on "Load Beamfile".
 
 <img src="../.gitbook/assets/CESAR_load_beamfile.png" alt="" width="1000">
