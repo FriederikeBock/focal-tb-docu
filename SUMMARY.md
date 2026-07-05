@@ -10,6 +10,7 @@
 * [QC](shifter-overview/qc-gui.md)
 * [Error Tracking](shifter-overview/infologger.md)
 * [Bookkeeping](shifter-overview/bookkeeping.md)
+* [Monitoring Cooling & SiPM voltage](overview-for-shifters/monitoring-cooling-and-sipm-voltage.md)
 * [Useful Information](shifter-overview/links.md)
 
 ## Hardware Components
