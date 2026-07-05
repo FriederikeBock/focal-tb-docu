@@ -20,6 +20,19 @@ ssh flp@alio2-flp-focal
 
 {% code overflow="wrap" %}
 ```shellscript
+cd ~/focaltb_fw/2026-07-04-dl-fifo-en
+for i in 1; do /root/intelFPGA_pro/24.1/qprogrammer/quartus/bin/quartus_pgm --cable=$i --mode=JTAG --operation="p;cru_paddedx12.sof"; done;
+source ~/rescan_only.sh
+```
+{% endcode %}
+
+<div style="border-left: 4px solid #ef4b4e; background: #fff0f0; padding: 0.8rem 1rem; margin: 1rem 0;">
+<strong>Critical:</strong> The following steps are out of date and never run them without clear instructions from experts.
+</div>
+
+To load the old firmware, you need to run the following steps:
+{% code overflow="wrap" %}
+```shellscript
 cd ~/focaltb_fw/2025-10
 for i in 1; do /root/intelFPGA_pro/24.1/qprogrammer/quartus/bin/quartus_pgm --cable=$i --mode=JTAG --operation="p;cru_paddedx12.sof"; done;
 source ~/rescan_only.sh
@@ -28,21 +41,33 @@ source ~/rescan_only.sh
 
 ## Load the configuration files
 
+To load the configuration files, you need to run the following steps:
+
+1. Open the Terminal UI
+2. Set the FIFO option to `1`
+3. Initialize the lpGBT
+4. Load the configuration files
+5. Reset the FIFO option to `0`
+6. Set the roc-config
+7. Set the pattern player
+8. Initialize the lpGBT (same as step 3)
+9. Set the User Logic
+
+<div style="border-left: 4px solid #ef4b4e; background: #fff0f0; padding: 0.8rem 1rem; margin: 1rem 0;">
+<strong>Critical:</strong> The following steps are out of date and never run them without clear instructions from experts.
+</div>
+
 The sequence of steps for loading the configuration files for the "old firmware" is as follows:
 
-0. Open the Terminal UI
-1. Set the local clock source
-2. Initialize the lpGBT
-3. Load the configuration files
-4. Unset the local clock source / Set the LTU clock source
-5. Set the roc-config
-6. Set the pattern player
-7. Initialize the lpGBT (same as step 2)
-8. Set the User Logic
-
-<div style="border-left: 4px solid #0969da; background: #ddf4ff; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Note:</strong> The "new firmware" is not verified by July 4th, so only the "old firmware" sequence should be followed.
-</div>
+1. Open the Terminal UI
+2. Set the local clock source
+3. Initialize the lpGBT
+4. Load the configuration files
+5. Unset the local clock source / Set the LTU clock source
+6. Set the roc-config
+7. Set the pattern player
+8. Initialize the lpGBT (same as step 2)
+9. Set the User Logic
 
 ### Open the Terminal UI
 
@@ -60,21 +85,15 @@ Then you should see it pop up like this:
 
 <img src="../.gitbook/assets/TUI_main.png" width="600">
 
-### Set the local clock source
+### Set/Reset the FIFO option
 
-<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Warning:</strong> We only need to do this if it is made clear that we are using the old firmware.
-</div>
+<img src="../.gitbook/assets/TUI_FIFO.png" width="600">
 
-To change the clock source, go to the `Connection` tab on the left, and in the `clock-config.py` section:
+To set the FIFO option, go to the `Connection` tab on the left, and in the `focal-hcal-mb6x-lpgbt-set-fifo.py` section, set the `FIFO enable` to `1` and click `Run MB6x FIFO` button.
 
-<img src="../.gitbook/assets/TUI_clock_local.png" width="600">
+To reset the FIFO option, set the `FIFO enable` to `0` and click `Run MB6x FIFO` button again.
 
-Set the `Clock source` to `local` and **uncheck** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the following output if successful:
 
-<img src="../.gitbook/assets/TUI_clock_success.png" width="600">
-
-If the number of up links are not 2, or it fails, **retry 3 times**. If it still fails, call Shihai.
 
 ### Initialize the lpGBT
 
@@ -102,18 +121,6 @@ Then, click the `Load JSON configs` button, and you should see the following out
 
 If you see lots of RD_WAIT errors, make sure which firmware is loaded and check with experts if you need to do the `Set the local clock source` step above.
 
-### Unset the local clock source / Set the LTU clock source
-
-<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
-<strong>Warning:</strong> Only do this if it is made clear that we are using the old firmware, and you have already set the local clock source.
-</div>
-
-It is the same section but the reverse. 
-
-<img src="../.gitbook/assets/TUI_clock_ttc.png" width="600">
-
-Set the `Clock source` to `ltu` and **check** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the same output as above if successful.
-
 ### Set the roc-config
 
 Click the `Run roc-config` button in the `Connection` tab.
@@ -125,3 +132,31 @@ Click the `Run o2-roc-pat-player` button in the `Connection` tab.
 ### Set the User Logic
 
 Click the `Run o2-roc-ul` button in the `Connection` tab.
+
+### Set the local clock source
+
+<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
+<strong>Warning:</strong> We only need to do this if it is made clear that we are using the old firmware.
+</div>
+
+To change the clock source, go to the `Connection` tab on the left, and in the `clock-config.py` section:
+
+<img src="../.gitbook/assets/TUI_clock_local.png" width="600">
+
+Set the `Clock source` to `local` and **uncheck** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the following output if successful:
+
+<img src="../.gitbook/assets/TUI_clock_success.png" width="600">
+
+If the number of up links are not 2, or it fails, **retry 3 times**. If it still fails, call Shihai.
+
+### Unset the local clock source / Set the LTU clock source
+
+<div style="border-left: 4px solid #9a6700; background: #fff8c5; padding: 0.8rem 1rem; margin: 1rem 0;">
+<strong>Warning:</strong> Only do this if it is made clear that we are using the old firmware, and you have already set the local clock source.
+</div>
+
+It is the same section but the reverse. 
+
+<img src="../.gitbook/assets/TUI_clock_ttc.png" width="600">
+
+Set the `Clock source` to `ltu` and **check** the `PON upstream` option. Then click `Run clock-config.py` button. You should see the same output as above if successful.
