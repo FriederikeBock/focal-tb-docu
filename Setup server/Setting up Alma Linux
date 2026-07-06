@@ -22,6 +22,7 @@ After it is done, and the ethernet cable is connected you may go to the next ste
 
 Go to installation source, and put in this address: 
 linuxsoft.cern.ch/cern/alma/9.5/CERN/x86_64
+It is important that this is the 9.5 and not just 9 or any other distro.
 
 For the "On the network path", put Closest mirror and then the path listed above. 
 Then add additional repository by clicking the "+" icon in the box, and putting https:// in the dropdown box, and then the path listed above.
