@@ -115,6 +115,12 @@ x 0 ASIC 1: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/SN_
 x 1 ASIC 0: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD5_final_calib_i2c_L1_40.json
 x 1 ASIC 1: /home/flp/cru-sw/COMMON/Calib_Config/RF_12_CF_10_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD12_final_calib_i2c_L1_40_dummy.json
 
+**RF_9_CF_8_CFC_6_CC_3_Cd_0**
+x 0 ASIC 0: /home/flp/cru-sw/COMMON/Calib_Config/RF_9_CF_8_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD13_final_calib_i2c_L1_40.json
+x 0 ASIC 1: /home/flp/cru-sw/COMMON/Calib_Config/RF_9_CF_8_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD25_final_calib_i2c_L1_40.json
+x 1 ASIC 0: /home/flp/cru-sw/COMMON/Calib_Config/RF_9_CF_8_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD5_final_calib_i2c_L1_40.json
+x 1 ASIC 1: /home/flp/cru-sw/COMMON/Calib_Config/RF_9_CF_8_CFC_6_CC_3_Cd_0/SN_D13_D25_D5_D12/asicD12_final_calib_i2c_L1_40_dummy.json
+
 Then, click the `Load JSON configs` button, and you should see the following output flowing in the log window:
 
 <img src="../.gitbook/assets/TUI_i2c_running.png" width="600">
