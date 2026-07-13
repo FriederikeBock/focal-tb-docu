@@ -30,3 +30,11 @@
 * [CRU control](expert-pages/cru-control.md)
 * [Trigger setup & control](expert-pages/trigger-setup-and-control.md)
 * [RoC (Readout Chip) Configuration](expert-pages/roc-config.md)
+
+## Setup Server
+
+* [What you need](setup-server/components.md)
+* [Preparing the server](setup-server/prepare-server.md)
+* [Setting up Alma Linux](setup-server/setup-alma-linux.md)
+* [Configuring the server](setup-server/config-server.md)
+* [Using the server](setup-server/using-server.md)
