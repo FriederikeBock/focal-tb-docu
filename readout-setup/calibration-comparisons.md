@@ -6,7 +6,7 @@ description: >-
 
 # Calibration comparisons
 
-This section heavily relies on the frame work explained on a [separate page](https://friederikebock.gitbook.io/epiclfhcaltb-ana/tb-analysis-basics/tb-analysis-basics) for installation instructions please have look there. The main prerequisits are a working root installation.&#x20;
+This section heavily relies on the frame work explained on a [separate page](https://friederikebock.gitbook.io/epiclfhcaltb-ana/tb-analysis-basics/tb-analysis-basics) for installation instructions please have look there. The main prerequisits are a working root installation.
 
 ## Converting the calib-outputs
 
@@ -22,13 +22,13 @@ runList=../configs/FOCalTest2026/DataDB_InjectionTestFocal_202604.csv
 ```
 {% endcode %}
 
-The `ParseCalibSamples`  program take multiple options:
+The `ParseCalibSamples` program take multiple options:
 
-* &#x20;`-i`  is followed by the input text file base name. These tend to have the following format:&#x20;
+* `-i` is followed by the input text file base name. These tend to have the following format:
 
 {% file src="../.gitbook/assets/205_Injection_asic4_injdac250_mg7_pack8_chn76_val0.csv" %}
 
-You would wanna give the file path and name without `_val0.csv` . Make sure the file has the correct header (should start with `#ch`) in the first line. If it doesn't please fix them using the following script.
+You would wanna give the file path and name without `_val0.csv` . Make sure the file has the correct header (should start with `#ch` or `row`) in the first line. If it doesn't please fix them using the following script.
 
 {% file src="../.gitbook/assets/FixInjectionsFormat_add_header_and_ids.sh" %}
 
@@ -38,10 +38,10 @@ bash FixInjectionsFormat_add_header_and_ids.sh 205_Injection_asic4_injdac400_mg7
 ```
 {% endcode %}
 
-* `-d`  is followed by a debug option \[1-3], enabling different levels of couts in the code
-* <mark style="background-color:$info;">`-I`</mark>  <mark style="background-color:$info;"></mark><mark style="background-color:$info;">triggers the reading of the</mark> <mark style="background-color:$info;"></mark><mark style="background-color:$info;">`H2GCalibX`</mark> <mark style="background-color:$info;"></mark><mark style="background-color:$info;">inputs from the injection scans. IMPORTANT!</mark>
-* `-m $mappingFile`  is required to define how the channels are related to the real readout geometry and an example file can be found in [../configs/FOCalTest2026/mapping\_injectionTest.txt](https://github.com/eic/epic-lfhcal-tbana/blob/main/configs/FOCalTest2026/mapping_injectionTest.txt)
-* `-r $runList`  is necessary for correct labeling and an example of such run list can be found in  [../configs/FOCalTest2026/DataDB\_InjectionTestFocal\_202604.cs](https://github.com/eic/epic-lfhcal-tbana/blob/main/configs/FOCalTest2026/DataDB_InjectionTestFocal_202604.csv)v the run numbers are here freely chosen, as the injections in principle don't store this information&#x20;
+* `-d` is followed by a debug option \[1-3], enabling different levels of couts in the code
+* <mark style="background-color:$info;">`-I`</mark> <mark style="background-color:$info;">triggers the reading of the</mark> <mark style="background-color:$info;">`H2GCalibX`</mark> <mark style="background-color:$info;">inputs from the injection scans. IMPORTANT!</mark>
+* `-m $mappingFile` is required to define how the channels are related to the real readout geometry and an example file can be found in [../configs/FOCalTest2026/mapping\_injectionTest.txt](https://github.com/eic/epic-lfhcal-tbana/blob/main/configs/FOCalTest2026/mapping_injectionTest.txt)
+* `-r $runList` is necessary for correct labeling and an example of such run list can be found in [../configs/FOCalTest2026/DataDB\_InjectionTestFocal\_202604.cs](https://github.com/eic/epic-lfhcal-tbana/blob/main/configs/FOCalTest2026/DataDB_InjectionTestFocal_202604.csv)v the run numbers are here freely chosen, as the injections in principle don't store this information
 
 {% code overflow="wrap" %}
 ```csv
@@ -58,9 +58,9 @@ beam-line injection
 
 It is important to add all relevant information, i.e. what it is type="injection", as well as all the information you can gather on the setting for the `RF, CF, CFcomp, CC,` high or low injection (mode), the injection value and where it can be found for your own convenience.
 
-* `-n $RunNr`  defines what run number you assign, it has to be contained in the runList you have given before. Otherwise it will crash.
-* `-o $RootOutputFileName`  defines the root output file name for everything which is stored
-* `-p $PlottingDirectory`  defines where the plots go and enables the plotting. This is also necessary in case you want to later make any comparison plots.
+* `-n $RunNr` defines what run number you assign, it has to be contained in the runList you have given before. Otherwise it will crash.
+* `-o $RootOutputFileName` defines the root output file name for everything which is stored
+* `-p $PlottingDirectory` defines where the plots go and enables the plotting. This is also necessary in case you want to later make any comparison plots.
 
 For all asics the following overview plots will be created
 
@@ -80,7 +80,7 @@ Once you converted the calib outputs according to the previous instructions you 
 ```
 {% endcode %}
 
-The helper function explains the options:&#x20;
+The helper function explains the options:
 
 {% code overflow="wrap" %}
 ```bash
@@ -107,7 +107,7 @@ Options:
 ```
 {% endcode %}
 
-We are here uisng the expanded histo reading option (`-E 1`) as we don't only wanna compare the calib parameters which are stored. `-H`  switches to the HGCROC outputs. This allows to produce among other thes following plots:
+We are here uisng the expanded histo reading option (`-E 1`) as we don't only wanna compare the calib parameters which are stored. `-H` switches to the HGCROC outputs. This allows to produce among other thes following plots:
 
 {% file src="../.gitbook/assets/TileWaveOverlay_Mod00_Layer01.pdf" %}
 
