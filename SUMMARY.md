@@ -24,6 +24,7 @@
 * [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
 * [Getting Started HGCROC & Calibrations KCU](readout-setup/getting-started-hgcroc-and-calibrations-kcu.md)
 * [Calibration comparisons](readout-setup/calibration-comparisons.md)
+* [Setting up the laser test](readout-setup/setting-up-laser-test.md)
 
 ## Expert Pages
 
