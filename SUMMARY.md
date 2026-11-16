@@ -18,13 +18,14 @@
 * [Electronics](hardware-components/electronics.md)
 * [Mechanical setup](hardware-components/mechanical-setup.md)
 
-## Readout-Setup
+## Readout-Setup KCU
 
-* [Setting up DAQ PC](readout-setup/setting-up-daq-pc.md)
-* [Setting up the HGCROC boards](readout-setup/setting-up-the-hgcroc-boards.md)
-* [Getting Started HGCROC & Calibrations KCU](readout-setup/getting-started-hgcroc-and-calibrations-kcu.md)
-* [Calibration comparisons](readout-setup/calibration-comparisons.md)
-* [Setting up the laser test](readout-setup/setting-up-laser-test.md)
+* [Setting up DAQ PC](readout-setup-kcu/setting-up-daq-pc.md)
+* [Setting up the HGCROC boards](readout-setup-kcu/setting-up-the-hgcroc-boards.md)
+* [Getting Started HGCROC & Calibrations KCU](readout-setup-kcu/getting-started-hgcroc-and-calibrations-kcu.md)
+* [Calibration comparisons](readout-setup-kcu/calibration-comparisons.md)
+* [Setting up the laser test](readout-setup-kcu/setting-up-laser-test.md)
+* [Laser test analysis](readout-setup-kcu/laser-test-analysis.md)
 
 ## Expert Pages
 
