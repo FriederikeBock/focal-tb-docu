@@ -18,20 +18,23 @@
 * [Electronics](hardware-components/electronics.md)
 * [Mechanical setup](hardware-components/mechanical-setup.md)
 
+## Expert Pages
+
+* [CRU control](expert-pages/cru-control.md)
+* [Trigger setup & control](expert-pages/trigger-setup-and-control.md)
+* [RoC (Readout Chip) Configuration](expert-pages/roc-config.md)
+
 ## Readout-Setup KCU
 
 * [Setting up DAQ PC](readout-setup-kcu/setting-up-daq-pc.md)
 * [Setting up the HGCROC boards](readout-setup-kcu/setting-up-the-hgcroc-boards.md)
 * [Getting Started HGCROC & Calibrations KCU](readout-setup-kcu/getting-started-hgcroc-and-calibrations-kcu.md)
 * [Calibration comparisons](readout-setup-kcu/calibration-comparisons.md)
-* [Setting up the laser test](readout-setup-kcu/setting-up-laser-test.md)
-* [Laser test analysis](readout-setup-kcu/laser-test-analysis.md)
 
-## Expert Pages
+## Laser tests with KCU setup
 
-* [CRU control](expert-pages/cru-control.md)
-* [Trigger setup & control](expert-pages/trigger-setup-and-control.md)
-* [RoC (Readout Chip) Configuration](expert-pages/roc-config.md)
+* [Setting up the laser test](laser-tests-with-kcu-setup/setting-up-laser-test.md)
+* [Laser test analysis](laser-tests-with-kcu-setup/laser-test-analysis.md)
 
 ## Setup Server
 
