@@ -38,3 +38,12 @@ Please use the following settings for the pulse generator (proved to work Oct 20
 Don't forget to press the **SYNC-button.**
 
 In the laser test in September 2026, an L1Offset value of 8 (the default value) and an ex trg delay of 16 (set in H2GDAQ) is used, effectively delaying the sampling time by 8 clock cycles (8 \* 25 ns = 200 ns).
+
+## September & October 2026 setup
+
+Illustrations of the setup of September and October 2026 can be found below. In both cases the laser was mounted in a fixed position at the front of the FOCal-H module. The scans in September were done at different temperatures & for different PCB boards (meaning the position of the laser cone on the FOCal-H module was changed). For the October campaign the same PCB was under test but a different fraction of channels was enabled by a plastic mask.&#x20;
+
+<figure><img src="../.gitbook/assets/IllustrationLaserTests.png" alt=""><figcaption><p>Illustration of Laser setup for 2026 September and October laser tests. </p></figcaption></figure>
+
+<div><figure><img src="../.gitbook/assets/IllustrationLaserTestsWithMask.png" alt="" width="563"><figcaption><p>Illustration of Laser setup for 2026 October laser tests with the mask applied, blocking part of the laser light at the front of the module. </p></figcaption></figure> <figure><img src="../.gitbook/assets/MaskV2.png" alt="" width="188"><figcaption><p>Mask for the front of the FOCal-H Protoype 3 (equivalent of ¼ of TB coverage). This mask can be used to either have all slots open, only 1 or several (i.e. 2 center ones in parallel) &#x26; is used for cross talk evaluations.</p></figcaption></figure></div>
+
