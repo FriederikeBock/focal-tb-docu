@@ -10,7 +10,11 @@ The main purpose of the laser tests is the cross calibration of the ADC and TOT 
 
 An extensive set was taken during October/November with a cone installed at the front of the FOCal-H. This allowed the laser light to be dispersed over multiple channels by using 1-2 lenses and attenuate the emitted light simultaneously. The most consistent result was reached with a single lense.&#x20;
 
+<figure><img src="../.gitbook/assets/IllustrationLaserTests (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
 To study either all channels simultaneously, or specific channels only an additional 3D printed mask was installed for a subset of runs.&#x20;
+
+<figure><img src="../.gitbook/assets/IllustrationLaserTestsWithMask (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Converting the data
 
